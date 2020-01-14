@@ -1,0 +1,186 @@
+#rodape{
+	justify-self: flex-end;
+	align-self: flex-end;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: flex-start;
+	background-color: black;
+	width: 100%;
+	color: white;
+}
+
+#rodapetitles
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	cursor: pointer;
+}
+
+#rodapebody
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+}
+
+#rodape a{
+	color: white;
+}
+
+.rodapeitem{
+}
+
+.rodapetitleitem{
+	color: white;
+	text-align: left;
+	font-size: 110%;
+	font-weight: 800;
+	padding-top:0.3rem;
+	padding-bottom:0.3rem;
+	cursor: pointer;
+}
+
+.rodapebodyitem{
+	color: white;
+	text-align: justify;
+	font-size: 100%;
+	margin-bottom: 30rem;
+}
+
+/********* FEEDBACK ********/
+#feedbacktitle {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+#feedbacktitlebody{
+	position: absolute;
+	display: none;
+	z-index: 10; 
+	background: #fdfdfd;
+	border: 0.065rem solid;
+	border-color: #cbcfe2 #c8cee7 #c4c7d7;
+	border-radius: 0.195rem;
+	/*background-image: -webkit-linear-gradient(top, #fdfdfd, #eceef4);*/
+	background-image: -moz-linear-gradient(top, #fdfdfd, #eceef4);
+	/*background-image: -o-linear-gradient(top, #fdfdfd, #eceef4);*/
+	background-image: linear-gradient(to bottom, #fdfdfd, #eceef4);
+	-webkit-box-shadow: 0 0.065rem 0.13rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0.065rem 0.13rem rgba(0, 0, 0, 0.1);
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+	max-width: 15rem;
+	color: black;
+	text-align: justify;
+	margin-left: 0.5rem;
+	margin-top: -2rem;
+	font-size: 80%;
+	font-weight: 200;
+}
+
+
+#questionfeedback
+{    
+    font-size: 80%;
+    font-family: sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 1rem;
+    color: black;
+    background: #ecf0f1;
+    border: 0.08rem solid black;
+    line-height:0.8rem;
+	margin-left: 0.5rem;
+	margin-top: 0.2rem;
+	margin-bottom: 0.6rem;
+	text-align: center;
+	cursor: default;
+}
+
+#questionfeedback:hover
+{
+    color: white;
+    background: black;
+    border-color: black;
+}
+
+#feedbackbodytext{
+text-align: justify;
+margin-bottom: 20px;
+}
+
+#feedbackform{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+}
+
+.tsc_form_contact_dark { text-align: left; width: 100%;}
+
+.tsc_form_contact_dark .form-input { display: block; height: 35px; padding: 6px 10px; margin-bottom: 20px; font: 14px Calibri, Helvetica, Arial, sans-serif; color: #ccc; background: #444; border: 1px solid #222; outline: none; -moz-border-radius:    8px; -webkit-border-radius: 8px; border-radius:         8px; -moz-box-shadow:    inset 0 0 1px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1); -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1); box-shadow:         inset 0 0 1px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1); -moz-background-clip:    padding; -webkit-background-clip: padding-box; background-clip:         padding-box; -moz-transition:    all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; -o-transition:      all 0.4s ease-in-out; -ms-transition:     all 0.4s ease-in-out; transition:         all 0.4s ease-in-out; behavior: url(PIE.htc); }
+
+#fileToUpload
+{
+	padding:0;
+}
+
+.form-select-option{
+height: 24px; padding: 6px 10px; font: 14px Calibri, Helvetica, Arial, sans-serif; background: #444; border: 1px solid #222; -moz-transition:    all 0.4s ease-in-out; -webkit-transition: all 0.4s ease-in-out; -o-transition:      all 0.4s ease-in-out; -ms-transition:     all 0.4s ease-in-out; transition:         all 0.4s ease-in-out; behavior: url(PIE.htc); 
+}
+
+.tsc_form_contact_dark textarea.form-input { height: 200px; overflow: auto; }
+
+.tsc_form_contact_dark .form-input:focus { border: 1px solid #7fbbf9; -moz-box-shadow:    inset 0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #7fbbf9; -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #7fbbf9; box-shadow:         inset 0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #7fbbf9; }
+
+.tsc_form_contact_dark .form-input:-moz-ui-invalid { border: 1px solid #e00; -moz-box-shadow:    inset 0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #e00; -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #e00; box-shadow:         inset 0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #e00;}
+.tsc_form_contact_dark .form-input.invalid { border: 1px solid #e00; -moz-box-shadow:    inset 0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #e00; -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #e00; box-shadow:         inset 0 0 1px rgba(0, 0, 0, 0.7), 0 0 3px #e00; }
+
+.tsc_form_contact_dark.nolabel ::-webkit-input-placeholder { color: #888;}
+.tsc_form_contact_dark.nolabel :-moz-placeholder { color: #888;}
+
+.tsc_form_contact_dark .form-btn { padding: 0 15px; height: 30px; font: bold 12px Calibri, Helvetica, Arial, sans-serif; text-align: center; color: #fff; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7); cursor: pointer; border: 1px solid #0d3d6a; outline: none; position: relative; background-color: #1d83e2; background-image: -webkit-gradient(linear, left top, left bottom, from(#1d83e2), to(#0d3d6a)); /* Saf4+, Chrome */ background-image: -webkit-linear-gradient(top, #1d83e2, #0d3d6a); /* Chrome 10+, Saf5.1+, iOS 5+ */ background-image:    -moz-linear-gradient(top, #1d83e2, #0d3d6a); /* FF3.6 */ background-image:     -ms-linear-gradient(top, #1d83e2, #0d3d6a); /* IE10 */ background-image:      -o-linear-gradient(top, #1d83e2, #0d3d6a); /* Opera 11.10+ */ background-image:         linear-gradient(top, #1d83e2, #0d3d6a); -pie-background:          linear-gradient(top, #1d83e2, #0d3d6a); /* IE6-IE9 */ -moz-border-radius:    16px; -webkit-border-radius: 16px; border-radius:         16px; -moz-box-shadow:    inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.7); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.7); box-shadow:         inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.7); -moz-background-clip:    padding; -webkit-background-clip: padding-box; background-clip:         padding-box; behavior: url(PIE.htc); }
+.tsc_form_contact_dark .form-btn:active { border: 1px solid #1d83e2; background-color: #0d3d6a; background-image: -webkit-gradient(linear, left top, left bottom, from(#0d3d6a), to(#1d83e2)); /* Saf4+, Chrome */ background-image: -webkit-linear-gradient(top, #0d3d6a, #1d83e2); /* Chrome 10+, Saf5.1+, iOS 5+ */ background-image:    -moz-linear-gradient(top, #0d3d6a, #1d83e2); /* FF3.6 */ background-image:     -ms-linear-gradient(top, #0d3d6a, #1d83e2); /* IE10 */ background-image:      -o-linear-gradient(top, #0d3d6a, #1d83e2); /* Opera 11.10+ */ background-image:         linear-gradient(top, #0d3d6a, #1d83e2); -pie-background:          linear-gradient(top, #0d3d6a, #1d83e2); /* IE6-IE9 */ -moz-box-shadow:    inset 0 0 2px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1); -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1); box-shadow:         inset 0 0 2px rgba(0, 0, 0, 0.7), 0 1px 0 rgba(255, 255, 255, 0.1); }
+.tsc_form_contact_dark input[type=submit]::-moz-focus-inner { border: 0; padding: 0;}
+
+.tsc_form_contact_dark label { margin-bottom: 10px; display: block; color: #ccc; font-size: 14px; font-weight: bold; }
+.tsc_form_contact_dark label span { font-size: 12px; color: #888; font-weight: normal; }
+
+.tsc_form_contact_dark.frame { padding: 20px; background-color: #343434; background-image: -webkit-gradient(linear, left top, left bottom, from(#343434), to(#141414)); /* Saf4+, Chrome */ background-image: -webkit-linear-gradient(top, #343434, #141414); /* Chrome 10+, Saf5.1+, iOS 5+ */ background-image:    -moz-linear-gradient(top, #343434, #141414); /* FF3.6 */ background-image:     -ms-linear-gradient(top, #343434, #141414); /* IE10 */ background-image:      -o-linear-gradient(top, #343434, #141414); /* Opera 11.10+ */ background-image:         linear-gradient(top, #343434, #141414); -pie-background:          linear-gradient(top, #343434, #141414); /* IE6-IE9 */ -moz-border-radius:    8px; -webkit-border-radius: 8px; border-radius:         8px; -moz-box-shadow:    0 1px 2px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.3); -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.3); box-shadow:         0 1px 2px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.3); behavior: URL(PIE.htc); }
+
+.tsc_form_contact_dark.tbar { padding: 0 20px 20px 20px; background-color: #3c3c3c; background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#343434)); /* Saf4+, Chrome */ background-image: -webkit-linear-gradient(top, #444444, #343434); /* Chrome 10+, Saf5.1+, iOS 5+ */ background-image:    -moz-linear-gradient(top, #444444, #343434); /* FF3.6 */ background-image:     -ms-linear-gradient(top, #444444, #343434); /* IE10 */ background-image:      -o-linear-gradient(top, #444444, #343434); /* Opera 11.10+ */ background-image:         linear-gradient(top, #444444, #343434); -pie-background:          linear-gradient(top, #444444, #343434); /* IE6-IE9 */ behavior: URL(PIE.htc); }
+.tsc_form_contact_dark.tbar h3 { font: normal 18px/1 Calibri, Helvetica, Arial, sans-serif; color: #ccc; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7); padding: 20px; margin: 0 -20px 20px -20px; background-color: #343434; background-image: -webkit-gradient(linear, left top, left bottom, from(#343434), to(#1b1b1b)); /* Saf4+, Chrome */ background-image: -webkit-linear-gradient(top, #343434, #1b1b1b); /* Chrome 10+, Saf5.1+, iOS 5+ */ background-image:    -moz-linear-gradient(top, #343434, #1b1b1b); /* FF3.6 */ background-image:     -ms-linear-gradient(top, #343434, #1b1b1b); /* IE10 */ background-image:      -o-linear-gradient(top, #343434, #1b1b1b); /* Opera 11.10+ */ background-image:         linear-gradient(top, #343434, #1b1b1b); -pie-background:          linear-gradient(top, #343434, #1b1b1b); /* IE6-IE9 */ -moz-border-radius:    8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; border-radius:         8px 8px 0 0; -moz-border-radius:    8px 8px 0 0; -moz-box-shadow:    inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.7); -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.7); box-shadow:         inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(0, 0, 0, 0.7); behavior: url(PIE.htc); }
+.tsc_form_contact_dark.tbar .form-input { background: #545454; }
+
+.tsc_form_contact_dark.tbar.nolabel ::-webkit-input-placeholder { color: #999;}
+.tsc_form_contact_dark.tbar.nolabel :-moz-placeholder { color: #999;}
+/*********** FIM DE FEEDBACK/***********/
+
+#afterfeedback
+{
+	align-self: center;
+	color: white;
+	text-align: center;
+	font-size: 120%;
+	font-weight: 900;
+	padding-top:0.3rem;
+	padding-bottom:0.3rem;
+}

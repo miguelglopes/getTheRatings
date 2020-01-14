@@ -1,0 +1,221 @@
+.radial-progress {
+	@circle-size: 90px;
+	@circle-background: #d6dadc;
+	@circle-color: #2980b9;
+	@inset-size: @circle-size*0.75;
+	@inset-color: #fbfbfb;
+	@transition-length: 1s;
+	@shadow: 0;
+	@percentage-color: black;
+	@percentage-font-size: 15px;
+	@percentage-text-width: 30px;
+	margin: 4px;
+	width:  @circle-size;
+	height: @circle-size;
+ 
+  text-align: left;
+ 
+        background-color: @circle-background;
+        border-radius: 50%;
+        .circle {
+                .mask, .fill, .shadow {
+                        width:    @circle-size;
+                        height:   @circle-size;
+                        position: absolute;
+                        border-radius: 50%;
+                }
+                .shadow {
+                        box-shadow: @shadow inset;
+                }
+                .mask, .fill {
+                        -webkit-backface-visibility: hidden;
+                        transition: -webkit-transform @transition-length;
+                        transition: -ms-transform @transition-length;
+                        transition: transform @transition-length;
+                        border-radius: 50%;
+                }
+                .mask {
+                        clip: rect(0px, @circle-size, @circle-size, @circle-size/2);
+                        .fill {
+                                clip: rect(0px, @circle-size/2, @circle-size, 0px);
+                                background-color: @circle-color;
+                        }
+                }
+        }
+        .inset {
+                width:       @inset-size;
+                height:      @inset-size;
+                position:    absolute;
+                margin-left: (@circle-size - @inset-size)/2;
+                margin-top:  (@circle-size - @inset-size)/2;
+                background-color: @inset-color;
+                border-radius: 50%;
+                box-shadow: @shadow;
+                .percentage {
+                        height:   @percentage-font-size;
+                        width:    @percentage-text-width;
+                        overflow: hidden;
+ 
+                        position: absolute;
+                        top:      12px;
+                        left:     (@inset-size - @percentage-text-width) / 2;
+ 
+                        line-height: 1;
+                        .numbers {
+                                margin-top: -@percentage-font-size;
+                                transition: width @transition-length;
+                                span {
+                                        width:          @percentage-text-width;
+                                        display:        inline-block;
+                                        vertical-align: top;
+                                        text-align:     center;
+                                        font-weight:    900;
+                                        font-size:      @percentage-font-size;
+                                        font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                        color:          @percentage-color;
+                                }
+                        }
+                }
+        }
+ 
+        @i: 0;
+        @increment: 180deg / 100;
+ 
+        .loop (@i) when (@i <= 100) {
+                &[data-progress="@{i}"] {
+                        .circle {
+                                .mask.full, .fill {
+                                        -webkit-transform: rotate(@increment * @i);
+                                        -ms-transform: rotate(@increment * @i);
+                                        transform: rotate(@increment * @i);
+                                }
+                                .fill.fix {
+                                        -webkit-transform: rotate(@increment * @i * 2);
+                                        -ms-transform: rotate(@increment * @i * 2);
+                                        transform: rotate(@increment * @i * 2);
+                                }
+                        }
+                        .inset .percentage .numbers {
+                                width: @i * @percentage-text-width + @percentage-text-width;
+								text-shadow: 0 0 2px rgb(505-@i*5, -5 + @i*5, 0) !important;
+                        }
+ 
+                        .mask .fill {
+                                background-color: rgb(505-@i*5, -5 + @i*5, 0) !important;
+                        }
+                }
+                .loop(@i + 1);
+        }
+        .loop(@i);
+}
+
+.radial-progressaverage {
+	@circle-size: 120px;
+	@circle-background: #d6dadc;
+	@circle-color: #2980b9;
+	@inset-size: @circle-size*0.75;
+	@inset-color: #fbfbfb;
+	@transition-length: 1s;
+	@shadow: 0;
+	@percentage-color: black;
+	@percentage-font-size: 20px;
+	@percentage-text-width: 40px;
+	margin: 4px;
+	width:  @circle-size;
+	height: @circle-size;
+ 
+  text-align: left;
+ 
+        background-color: @circle-background;
+        border-radius: 50%;
+        .circle {
+                .mask, .fill, .shadow {
+                        width:    @circle-size;
+                        height:   @circle-size;
+                        position: absolute;
+                        border-radius: 50%;
+                }
+                .shadow {
+                        box-shadow: @shadow inset;
+                }
+                .mask, .fill {
+                        -webkit-backface-visibility: hidden;
+                        transition: -webkit-transform @transition-length;
+                        transition: -ms-transform @transition-length;
+                        transition: transform @transition-length;
+                        border-radius: 50%;
+                }
+                .mask {
+                        clip: rect(0px, @circle-size, @circle-size, @circle-size/2);
+                        .fill {
+                                clip: rect(0px, @circle-size/2, @circle-size, 0px);
+                                background-color: @circle-color;
+                        }
+                }
+        }
+        .inset {
+                width:       @inset-size;
+                height:      @inset-size;
+                position:    absolute;
+                margin-left: (@circle-size - @inset-size)/2;
+                margin-top:  (@circle-size - @inset-size)/2;
+                background-color: @inset-color;
+                border-radius: 50%;
+                box-shadow: @shadow;
+                .percentage {
+                        height:   @percentage-font-size;
+                        width:    @percentage-text-width;
+                        overflow: hidden;
+ 
+                        position: absolute;
+                        top:      12px;
+                        left:     (@inset-size - @percentage-text-width) / 2;
+ 
+                        line-height: 1;
+                        .numbers {
+                                margin-top: -@percentage-font-size;
+                                transition: width @transition-length;
+                                span {
+                                        width:          @percentage-text-width;
+                                        display:        inline-block;
+                                        vertical-align: top;
+                                        text-align:     center;
+                                        font-weight:    900;
+                                        font-size:      @percentage-font-size;
+                                        font-family:    "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                                        color:          @percentage-color;
+                                }
+                        }
+                }
+        }
+ 
+        @i: 0;
+        @increment: 180deg / 100;
+ 
+        .loop (@i) when (@i <= 100) {
+                &[data-progress="@{i}"] {
+                        .circle {
+                                .mask.full, .fill {
+                                        -webkit-transform: rotate(@increment * @i);
+                                        -ms-transform: rotate(@increment * @i);
+                                        transform: rotate(@increment * @i);
+                                }
+                                .fill.fix {
+                                        -webkit-transform: rotate(@increment * @i * 2);
+                                        -ms-transform: rotate(@increment * @i * 2);
+                                        transform: rotate(@increment * @i * 2);
+                                }
+                        }
+                        .inset .percentage .numbers {
+                                width: @i * @percentage-text-width + @percentage-text-width;
+								text-shadow: 0 0 2px rgb(505-@i*5, -5 + @i*5, 0) !important;
+                        }
+ 
+                        .mask .fill {
+                                background-color: rgb(505-@i*5, -5 + @i*5, 0) !important;
+                        }
+                }
+                .loop(@i + 1);
+        }
+        .loop(@i);
+}

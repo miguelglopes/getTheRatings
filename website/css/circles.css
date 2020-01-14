@@ -1,0 +1,3770 @@
+.radial-progress {
+  margin: 4px;
+  width: 90px;
+  height: 90px;
+  text-align: left;
+  background-color: #d6dadc;
+  border-radius: 50%;
+}
+.radial-progress .circle .mask,
+.radial-progress .circle .fill,
+.radial-progress .circle .shadow {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border-radius: 50%;
+}
+.radial-progress .circle .shadow {
+  box-shadow: 0 inset;
+}
+.radial-progress .circle .mask,
+.radial-progress .circle .fill {
+  -webkit-backface-visibility: hidden;
+  transition: -webkit-transform 1s;
+  transition: -ms-transform 1s;
+  transition: transform 1s;
+  border-radius: 50%;
+}
+.radial-progress .circle .mask {
+  clip: rect(0px, 90px, 90px, 45px);
+}
+.radial-progress .circle .mask .fill {
+  clip: rect(0px, 45px, 90px, 0px);
+  background-color: #2980b9;
+}
+.radial-progress .inset {
+  width: 67.5px;
+  height: 67.5px;
+  position: absolute;
+  margin-left: 11.25px;
+  margin-top: 11.25px;
+  background-color: #fbfbfb;
+  border-radius: 50%;
+  box-shadow: 0;
+}
+.radial-progress .inset .percentage {
+  height: 15px;
+  width: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  left: 18.75px;
+  line-height: 1;
+}
+.radial-progress .inset .percentage .numbers {
+  margin-top: -15px;
+  transition: width 1s;
+}
+.radial-progress .inset .percentage .numbers span {
+  width: 30px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+}
+.radial-progress[data-progress="0"] .circle .mask.full,
+.radial-progress[data-progress="0"] .circle .fill {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.radial-progress[data-progress="0"] .circle .fill.fix {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.radial-progress[data-progress="0"] .inset .percentage .numbers {
+  width: 30px;
+  text-shadow: 0 0 2px #ff0000 !important;
+}
+.radial-progress[data-progress="0"] .mask .fill {
+  background-color: #ff0000 !important;
+}
+.radial-progress[data-progress="1"] .circle .mask.full,
+.radial-progress[data-progress="1"] .circle .fill {
+  -webkit-transform: rotate(1.8deg);
+  -ms-transform: rotate(1.8deg);
+  transform: rotate(1.8deg);
+}
+.radial-progress[data-progress="1"] .circle .fill.fix {
+  -webkit-transform: rotate(3.6deg);
+  -ms-transform: rotate(3.6deg);
+  transform: rotate(3.6deg);
+}
+.radial-progress[data-progress="1"] .inset .percentage .numbers {
+  width: 60px;
+  text-shadow: 0 0 2px #ff0000 !important;
+}
+.radial-progress[data-progress="1"] .mask .fill {
+  background-color: #ff0000 !important;
+}
+.radial-progress[data-progress="2"] .circle .mask.full,
+.radial-progress[data-progress="2"] .circle .fill {
+  -webkit-transform: rotate(3.6deg);
+  -ms-transform: rotate(3.6deg);
+  transform: rotate(3.6deg);
+}
+.radial-progress[data-progress="2"] .circle .fill.fix {
+  -webkit-transform: rotate(7.2deg);
+  -ms-transform: rotate(7.2deg);
+  transform: rotate(7.2deg);
+}
+.radial-progress[data-progress="2"] .inset .percentage .numbers {
+  width: 90px;
+  text-shadow: 0 0 2px #ff0500 !important;
+}
+.radial-progress[data-progress="2"] .mask .fill {
+  background-color: #ff0500 !important;
+}
+.radial-progress[data-progress="3"] .circle .mask.full,
+.radial-progress[data-progress="3"] .circle .fill {
+  -webkit-transform: rotate(5.4deg);
+  -ms-transform: rotate(5.4deg);
+  transform: rotate(5.4deg);
+}
+.radial-progress[data-progress="3"] .circle .fill.fix {
+  -webkit-transform: rotate(10.8deg);
+  -ms-transform: rotate(10.8deg);
+  transform: rotate(10.8deg);
+}
+.radial-progress[data-progress="3"] .inset .percentage .numbers {
+  width: 120px;
+  text-shadow: 0 0 2px #ff0a00 !important;
+}
+.radial-progress[data-progress="3"] .mask .fill {
+  background-color: #ff0a00 !important;
+}
+.radial-progress[data-progress="4"] .circle .mask.full,
+.radial-progress[data-progress="4"] .circle .fill {
+  -webkit-transform: rotate(7.2deg);
+  -ms-transform: rotate(7.2deg);
+  transform: rotate(7.2deg);
+}
+.radial-progress[data-progress="4"] .circle .fill.fix {
+  -webkit-transform: rotate(14.4deg);
+  -ms-transform: rotate(14.4deg);
+  transform: rotate(14.4deg);
+}
+.radial-progress[data-progress="4"] .inset .percentage .numbers {
+  width: 150px;
+  text-shadow: 0 0 2px #ff0f00 !important;
+}
+.radial-progress[data-progress="4"] .mask .fill {
+  background-color: #ff0f00 !important;
+}
+.radial-progress[data-progress="5"] .circle .mask.full,
+.radial-progress[data-progress="5"] .circle .fill {
+  -webkit-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+.radial-progress[data-progress="5"] .circle .fill.fix {
+  -webkit-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+.radial-progress[data-progress="5"] .inset .percentage .numbers {
+  width: 180px;
+  text-shadow: 0 0 2px #ff1400 !important;
+}
+.radial-progress[data-progress="5"] .mask .fill {
+  background-color: #ff1400 !important;
+}
+.radial-progress[data-progress="6"] .circle .mask.full,
+.radial-progress[data-progress="6"] .circle .fill {
+  -webkit-transform: rotate(10.8deg);
+  -ms-transform: rotate(10.8deg);
+  transform: rotate(10.8deg);
+}
+.radial-progress[data-progress="6"] .circle .fill.fix {
+  -webkit-transform: rotate(21.6deg);
+  -ms-transform: rotate(21.6deg);
+  transform: rotate(21.6deg);
+}
+.radial-progress[data-progress="6"] .inset .percentage .numbers {
+  width: 210px;
+  text-shadow: 0 0 2px #ff1900 !important;
+}
+.radial-progress[data-progress="6"] .mask .fill {
+  background-color: #ff1900 !important;
+}
+.radial-progress[data-progress="7"] .circle .mask.full,
+.radial-progress[data-progress="7"] .circle .fill {
+  -webkit-transform: rotate(12.6deg);
+  -ms-transform: rotate(12.6deg);
+  transform: rotate(12.6deg);
+}
+.radial-progress[data-progress="7"] .circle .fill.fix {
+  -webkit-transform: rotate(25.2deg);
+  -ms-transform: rotate(25.2deg);
+  transform: rotate(25.2deg);
+}
+.radial-progress[data-progress="7"] .inset .percentage .numbers {
+  width: 240px;
+  text-shadow: 0 0 2px #ff1e00 !important;
+}
+.radial-progress[data-progress="7"] .mask .fill {
+  background-color: #ff1e00 !important;
+}
+.radial-progress[data-progress="8"] .circle .mask.full,
+.radial-progress[data-progress="8"] .circle .fill {
+  -webkit-transform: rotate(14.4deg);
+  -ms-transform: rotate(14.4deg);
+  transform: rotate(14.4deg);
+}
+.radial-progress[data-progress="8"] .circle .fill.fix {
+  -webkit-transform: rotate(28.8deg);
+  -ms-transform: rotate(28.8deg);
+  transform: rotate(28.8deg);
+}
+.radial-progress[data-progress="8"] .inset .percentage .numbers {
+  width: 270px;
+  text-shadow: 0 0 2px #ff2300 !important;
+}
+.radial-progress[data-progress="8"] .mask .fill {
+  background-color: #ff2300 !important;
+}
+.radial-progress[data-progress="9"] .circle .mask.full,
+.radial-progress[data-progress="9"] .circle .fill {
+  -webkit-transform: rotate(16.2deg);
+  -ms-transform: rotate(16.2deg);
+  transform: rotate(16.2deg);
+}
+.radial-progress[data-progress="9"] .circle .fill.fix {
+  -webkit-transform: rotate(32.4deg);
+  -ms-transform: rotate(32.4deg);
+  transform: rotate(32.4deg);
+}
+.radial-progress[data-progress="9"] .inset .percentage .numbers {
+  width: 300px;
+  text-shadow: 0 0 2px #ff2800 !important;
+}
+.radial-progress[data-progress="9"] .mask .fill {
+  background-color: #ff2800 !important;
+}
+.radial-progress[data-progress="10"] .circle .mask.full,
+.radial-progress[data-progress="10"] .circle .fill {
+  -webkit-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+.radial-progress[data-progress="10"] .circle .fill.fix {
+  -webkit-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+.radial-progress[data-progress="10"] .inset .percentage .numbers {
+  width: 330px;
+  text-shadow: 0 0 2px #ff2d00 !important;
+}
+.radial-progress[data-progress="10"] .mask .fill {
+  background-color: #ff2d00 !important;
+}
+.radial-progress[data-progress="11"] .circle .mask.full,
+.radial-progress[data-progress="11"] .circle .fill {
+  -webkit-transform: rotate(19.8deg);
+  -ms-transform: rotate(19.8deg);
+  transform: rotate(19.8deg);
+}
+.radial-progress[data-progress="11"] .circle .fill.fix {
+  -webkit-transform: rotate(39.6deg);
+  -ms-transform: rotate(39.6deg);
+  transform: rotate(39.6deg);
+}
+.radial-progress[data-progress="11"] .inset .percentage .numbers {
+  width: 360px;
+  text-shadow: 0 0 2px #ff3200 !important;
+}
+.radial-progress[data-progress="11"] .mask .fill {
+  background-color: #ff3200 !important;
+}
+.radial-progress[data-progress="12"] .circle .mask.full,
+.radial-progress[data-progress="12"] .circle .fill {
+  -webkit-transform: rotate(21.6deg);
+  -ms-transform: rotate(21.6deg);
+  transform: rotate(21.6deg);
+}
+.radial-progress[data-progress="12"] .circle .fill.fix {
+  -webkit-transform: rotate(43.2deg);
+  -ms-transform: rotate(43.2deg);
+  transform: rotate(43.2deg);
+}
+.radial-progress[data-progress="12"] .inset .percentage .numbers {
+  width: 390px;
+  text-shadow: 0 0 2px #ff3700 !important;
+}
+.radial-progress[data-progress="12"] .mask .fill {
+  background-color: #ff3700 !important;
+}
+.radial-progress[data-progress="13"] .circle .mask.full,
+.radial-progress[data-progress="13"] .circle .fill {
+  -webkit-transform: rotate(23.4deg);
+  -ms-transform: rotate(23.4deg);
+  transform: rotate(23.4deg);
+}
+.radial-progress[data-progress="13"] .circle .fill.fix {
+  -webkit-transform: rotate(46.8deg);
+  -ms-transform: rotate(46.8deg);
+  transform: rotate(46.8deg);
+}
+.radial-progress[data-progress="13"] .inset .percentage .numbers {
+  width: 420px;
+  text-shadow: 0 0 2px #ff3c00 !important;
+}
+.radial-progress[data-progress="13"] .mask .fill {
+  background-color: #ff3c00 !important;
+}
+.radial-progress[data-progress="14"] .circle .mask.full,
+.radial-progress[data-progress="14"] .circle .fill {
+  -webkit-transform: rotate(25.2deg);
+  -ms-transform: rotate(25.2deg);
+  transform: rotate(25.2deg);
+}
+.radial-progress[data-progress="14"] .circle .fill.fix {
+  -webkit-transform: rotate(50.4deg);
+  -ms-transform: rotate(50.4deg);
+  transform: rotate(50.4deg);
+}
+.radial-progress[data-progress="14"] .inset .percentage .numbers {
+  width: 450px;
+  text-shadow: 0 0 2px #ff4100 !important;
+}
+.radial-progress[data-progress="14"] .mask .fill {
+  background-color: #ff4100 !important;
+}
+.radial-progress[data-progress="15"] .circle .mask.full,
+.radial-progress[data-progress="15"] .circle .fill {
+  -webkit-transform: rotate(27deg);
+  -ms-transform: rotate(27deg);
+  transform: rotate(27deg);
+}
+.radial-progress[data-progress="15"] .circle .fill.fix {
+  -webkit-transform: rotate(54deg);
+  -ms-transform: rotate(54deg);
+  transform: rotate(54deg);
+}
+.radial-progress[data-progress="15"] .inset .percentage .numbers {
+  width: 480px;
+  text-shadow: 0 0 2px #ff4600 !important;
+}
+.radial-progress[data-progress="15"] .mask .fill {
+  background-color: #ff4600 !important;
+}
+.radial-progress[data-progress="16"] .circle .mask.full,
+.radial-progress[data-progress="16"] .circle .fill {
+  -webkit-transform: rotate(28.8deg);
+  -ms-transform: rotate(28.8deg);
+  transform: rotate(28.8deg);
+}
+.radial-progress[data-progress="16"] .circle .fill.fix {
+  -webkit-transform: rotate(57.6deg);
+  -ms-transform: rotate(57.6deg);
+  transform: rotate(57.6deg);
+}
+.radial-progress[data-progress="16"] .inset .percentage .numbers {
+  width: 510px;
+  text-shadow: 0 0 2px #ff4b00 !important;
+}
+.radial-progress[data-progress="16"] .mask .fill {
+  background-color: #ff4b00 !important;
+}
+.radial-progress[data-progress="17"] .circle .mask.full,
+.radial-progress[data-progress="17"] .circle .fill {
+  -webkit-transform: rotate(30.6deg);
+  -ms-transform: rotate(30.6deg);
+  transform: rotate(30.6deg);
+}
+.radial-progress[data-progress="17"] .circle .fill.fix {
+  -webkit-transform: rotate(61.2deg);
+  -ms-transform: rotate(61.2deg);
+  transform: rotate(61.2deg);
+}
+.radial-progress[data-progress="17"] .inset .percentage .numbers {
+  width: 540px;
+  text-shadow: 0 0 2px #ff5000 !important;
+}
+.radial-progress[data-progress="17"] .mask .fill {
+  background-color: #ff5000 !important;
+}
+.radial-progress[data-progress="18"] .circle .mask.full,
+.radial-progress[data-progress="18"] .circle .fill {
+  -webkit-transform: rotate(32.4deg);
+  -ms-transform: rotate(32.4deg);
+  transform: rotate(32.4deg);
+}
+.radial-progress[data-progress="18"] .circle .fill.fix {
+  -webkit-transform: rotate(64.8deg);
+  -ms-transform: rotate(64.8deg);
+  transform: rotate(64.8deg);
+}
+.radial-progress[data-progress="18"] .inset .percentage .numbers {
+  width: 570px;
+  text-shadow: 0 0 2px #ff5500 !important;
+}
+.radial-progress[data-progress="18"] .mask .fill {
+  background-color: #ff5500 !important;
+}
+.radial-progress[data-progress="19"] .circle .mask.full,
+.radial-progress[data-progress="19"] .circle .fill {
+  -webkit-transform: rotate(34.2deg);
+  -ms-transform: rotate(34.2deg);
+  transform: rotate(34.2deg);
+}
+.radial-progress[data-progress="19"] .circle .fill.fix {
+  -webkit-transform: rotate(68.4deg);
+  -ms-transform: rotate(68.4deg);
+  transform: rotate(68.4deg);
+}
+.radial-progress[data-progress="19"] .inset .percentage .numbers {
+  width: 600px;
+  text-shadow: 0 0 2px #ff5a00 !important;
+}
+.radial-progress[data-progress="19"] .mask .fill {
+  background-color: #ff5a00 !important;
+}
+.radial-progress[data-progress="20"] .circle .mask.full,
+.radial-progress[data-progress="20"] .circle .fill {
+  -webkit-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+.radial-progress[data-progress="20"] .circle .fill.fix {
+  -webkit-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.radial-progress[data-progress="20"] .inset .percentage .numbers {
+  width: 630px;
+  text-shadow: 0 0 2px #ff5f00 !important;
+}
+.radial-progress[data-progress="20"] .mask .fill {
+  background-color: #ff5f00 !important;
+}
+.radial-progress[data-progress="21"] .circle .mask.full,
+.radial-progress[data-progress="21"] .circle .fill {
+  -webkit-transform: rotate(37.8deg);
+  -ms-transform: rotate(37.8deg);
+  transform: rotate(37.8deg);
+}
+.radial-progress[data-progress="21"] .circle .fill.fix {
+  -webkit-transform: rotate(75.6deg);
+  -ms-transform: rotate(75.6deg);
+  transform: rotate(75.6deg);
+}
+.radial-progress[data-progress="21"] .inset .percentage .numbers {
+  width: 660px;
+  text-shadow: 0 0 2px #ff6400 !important;
+}
+.radial-progress[data-progress="21"] .mask .fill {
+  background-color: #ff6400 !important;
+}
+.radial-progress[data-progress="22"] .circle .mask.full,
+.radial-progress[data-progress="22"] .circle .fill {
+  -webkit-transform: rotate(39.6deg);
+  -ms-transform: rotate(39.6deg);
+  transform: rotate(39.6deg);
+}
+.radial-progress[data-progress="22"] .circle .fill.fix {
+  -webkit-transform: rotate(79.2deg);
+  -ms-transform: rotate(79.2deg);
+  transform: rotate(79.2deg);
+}
+.radial-progress[data-progress="22"] .inset .percentage .numbers {
+  width: 690px;
+  text-shadow: 0 0 2px #ff6900 !important;
+}
+.radial-progress[data-progress="22"] .mask .fill {
+  background-color: #ff6900 !important;
+}
+.radial-progress[data-progress="23"] .circle .mask.full,
+.radial-progress[data-progress="23"] .circle .fill {
+  -webkit-transform: rotate(41.4deg);
+  -ms-transform: rotate(41.4deg);
+  transform: rotate(41.4deg);
+}
+.radial-progress[data-progress="23"] .circle .fill.fix {
+  -webkit-transform: rotate(82.8deg);
+  -ms-transform: rotate(82.8deg);
+  transform: rotate(82.8deg);
+}
+.radial-progress[data-progress="23"] .inset .percentage .numbers {
+  width: 720px;
+  text-shadow: 0 0 2px #ff6e00 !important;
+}
+.radial-progress[data-progress="23"] .mask .fill {
+  background-color: #ff6e00 !important;
+}
+.radial-progress[data-progress="24"] .circle .mask.full,
+.radial-progress[data-progress="24"] .circle .fill {
+  -webkit-transform: rotate(43.2deg);
+  -ms-transform: rotate(43.2deg);
+  transform: rotate(43.2deg);
+}
+.radial-progress[data-progress="24"] .circle .fill.fix {
+  -webkit-transform: rotate(86.4deg);
+  -ms-transform: rotate(86.4deg);
+  transform: rotate(86.4deg);
+}
+.radial-progress[data-progress="24"] .inset .percentage .numbers {
+  width: 750px;
+  text-shadow: 0 0 2px #ff7300 !important;
+}
+.radial-progress[data-progress="24"] .mask .fill {
+  background-color: #ff7300 !important;
+}
+.radial-progress[data-progress="25"] .circle .mask.full,
+.radial-progress[data-progress="25"] .circle .fill {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.radial-progress[data-progress="25"] .circle .fill.fix {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.radial-progress[data-progress="25"] .inset .percentage .numbers {
+  width: 780px;
+  text-shadow: 0 0 2px #ff7800 !important;
+}
+.radial-progress[data-progress="25"] .mask .fill {
+  background-color: #ff7800 !important;
+}
+.radial-progress[data-progress="26"] .circle .mask.full,
+.radial-progress[data-progress="26"] .circle .fill {
+  -webkit-transform: rotate(46.8deg);
+  -ms-transform: rotate(46.8deg);
+  transform: rotate(46.8deg);
+}
+.radial-progress[data-progress="26"] .circle .fill.fix {
+  -webkit-transform: rotate(93.6deg);
+  -ms-transform: rotate(93.6deg);
+  transform: rotate(93.6deg);
+}
+.radial-progress[data-progress="26"] .inset .percentage .numbers {
+  width: 810px;
+  text-shadow: 0 0 2px #ff7d00 !important;
+}
+.radial-progress[data-progress="26"] .mask .fill {
+  background-color: #ff7d00 !important;
+}
+.radial-progress[data-progress="27"] .circle .mask.full,
+.radial-progress[data-progress="27"] .circle .fill {
+  -webkit-transform: rotate(48.6deg);
+  -ms-transform: rotate(48.6deg);
+  transform: rotate(48.6deg);
+}
+.radial-progress[data-progress="27"] .circle .fill.fix {
+  -webkit-transform: rotate(97.2deg);
+  -ms-transform: rotate(97.2deg);
+  transform: rotate(97.2deg);
+}
+.radial-progress[data-progress="27"] .inset .percentage .numbers {
+  width: 840px;
+  text-shadow: 0 0 2px #ff8200 !important;
+}
+.radial-progress[data-progress="27"] .mask .fill {
+  background-color: #ff8200 !important;
+}
+.radial-progress[data-progress="28"] .circle .mask.full,
+.radial-progress[data-progress="28"] .circle .fill {
+  -webkit-transform: rotate(50.4deg);
+  -ms-transform: rotate(50.4deg);
+  transform: rotate(50.4deg);
+}
+.radial-progress[data-progress="28"] .circle .fill.fix {
+  -webkit-transform: rotate(100.8deg);
+  -ms-transform: rotate(100.8deg);
+  transform: rotate(100.8deg);
+}
+.radial-progress[data-progress="28"] .inset .percentage .numbers {
+  width: 870px;
+  text-shadow: 0 0 2px #ff8700 !important;
+}
+.radial-progress[data-progress="28"] .mask .fill {
+  background-color: #ff8700 !important;
+}
+.radial-progress[data-progress="29"] .circle .mask.full,
+.radial-progress[data-progress="29"] .circle .fill {
+  -webkit-transform: rotate(52.2deg);
+  -ms-transform: rotate(52.2deg);
+  transform: rotate(52.2deg);
+}
+.radial-progress[data-progress="29"] .circle .fill.fix {
+  -webkit-transform: rotate(104.4deg);
+  -ms-transform: rotate(104.4deg);
+  transform: rotate(104.4deg);
+}
+.radial-progress[data-progress="29"] .inset .percentage .numbers {
+  width: 900px;
+  text-shadow: 0 0 2px #ff8c00 !important;
+}
+.radial-progress[data-progress="29"] .mask .fill {
+  background-color: #ff8c00 !important;
+}
+.radial-progress[data-progress="30"] .circle .mask.full,
+.radial-progress[data-progress="30"] .circle .fill {
+  -webkit-transform: rotate(54deg);
+  -ms-transform: rotate(54deg);
+  transform: rotate(54deg);
+}
+.radial-progress[data-progress="30"] .circle .fill.fix {
+  -webkit-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+.radial-progress[data-progress="30"] .inset .percentage .numbers {
+  width: 930px;
+  text-shadow: 0 0 2px #ff9100 !important;
+}
+.radial-progress[data-progress="30"] .mask .fill {
+  background-color: #ff9100 !important;
+}
+.radial-progress[data-progress="31"] .circle .mask.full,
+.radial-progress[data-progress="31"] .circle .fill {
+  -webkit-transform: rotate(55.8deg);
+  -ms-transform: rotate(55.8deg);
+  transform: rotate(55.8deg);
+}
+.radial-progress[data-progress="31"] .circle .fill.fix {
+  -webkit-transform: rotate(111.6deg);
+  -ms-transform: rotate(111.6deg);
+  transform: rotate(111.6deg);
+}
+.radial-progress[data-progress="31"] .inset .percentage .numbers {
+  width: 960px;
+  text-shadow: 0 0 2px #ff9600 !important;
+}
+.radial-progress[data-progress="31"] .mask .fill {
+  background-color: #ff9600 !important;
+}
+.radial-progress[data-progress="32"] .circle .mask.full,
+.radial-progress[data-progress="32"] .circle .fill {
+  -webkit-transform: rotate(57.6deg);
+  -ms-transform: rotate(57.6deg);
+  transform: rotate(57.6deg);
+}
+.radial-progress[data-progress="32"] .circle .fill.fix {
+  -webkit-transform: rotate(115.2deg);
+  -ms-transform: rotate(115.2deg);
+  transform: rotate(115.2deg);
+}
+.radial-progress[data-progress="32"] .inset .percentage .numbers {
+  width: 990px;
+  text-shadow: 0 0 2px #ff9b00 !important;
+}
+.radial-progress[data-progress="32"] .mask .fill {
+  background-color: #ff9b00 !important;
+}
+.radial-progress[data-progress="33"] .circle .mask.full,
+.radial-progress[data-progress="33"] .circle .fill {
+  -webkit-transform: rotate(59.4deg);
+  -ms-transform: rotate(59.4deg);
+  transform: rotate(59.4deg);
+}
+.radial-progress[data-progress="33"] .circle .fill.fix {
+  -webkit-transform: rotate(118.8deg);
+  -ms-transform: rotate(118.8deg);
+  transform: rotate(118.8deg);
+}
+.radial-progress[data-progress="33"] .inset .percentage .numbers {
+  width: 1020px;
+  text-shadow: 0 0 2px #ffa000 !important;
+}
+.radial-progress[data-progress="33"] .mask .fill {
+  background-color: #ffa000 !important;
+}
+.radial-progress[data-progress="34"] .circle .mask.full,
+.radial-progress[data-progress="34"] .circle .fill {
+  -webkit-transform: rotate(61.2deg);
+  -ms-transform: rotate(61.2deg);
+  transform: rotate(61.2deg);
+}
+.radial-progress[data-progress="34"] .circle .fill.fix {
+  -webkit-transform: rotate(122.4deg);
+  -ms-transform: rotate(122.4deg);
+  transform: rotate(122.4deg);
+}
+.radial-progress[data-progress="34"] .inset .percentage .numbers {
+  width: 1050px;
+  text-shadow: 0 0 2px #ffa500 !important;
+}
+.radial-progress[data-progress="34"] .mask .fill {
+  background-color: #ffa500 !important;
+}
+.radial-progress[data-progress="35"] .circle .mask.full,
+.radial-progress[data-progress="35"] .circle .fill {
+  -webkit-transform: rotate(63deg);
+  -ms-transform: rotate(63deg);
+  transform: rotate(63deg);
+}
+.radial-progress[data-progress="35"] .circle .fill.fix {
+  -webkit-transform: rotate(126deg);
+  -ms-transform: rotate(126deg);
+  transform: rotate(126deg);
+}
+.radial-progress[data-progress="35"] .inset .percentage .numbers {
+  width: 1080px;
+  text-shadow: 0 0 2px #ffaa00 !important;
+}
+.radial-progress[data-progress="35"] .mask .fill {
+  background-color: #ffaa00 !important;
+}
+.radial-progress[data-progress="36"] .circle .mask.full,
+.radial-progress[data-progress="36"] .circle .fill {
+  -webkit-transform: rotate(64.8deg);
+  -ms-transform: rotate(64.8deg);
+  transform: rotate(64.8deg);
+}
+.radial-progress[data-progress="36"] .circle .fill.fix {
+  -webkit-transform: rotate(129.6deg);
+  -ms-transform: rotate(129.6deg);
+  transform: rotate(129.6deg);
+}
+.radial-progress[data-progress="36"] .inset .percentage .numbers {
+  width: 1110px;
+  text-shadow: 0 0 2px #ffaf00 !important;
+}
+.radial-progress[data-progress="36"] .mask .fill {
+  background-color: #ffaf00 !important;
+}
+.radial-progress[data-progress="37"] .circle .mask.full,
+.radial-progress[data-progress="37"] .circle .fill {
+  -webkit-transform: rotate(66.6deg);
+  -ms-transform: rotate(66.6deg);
+  transform: rotate(66.6deg);
+}
+.radial-progress[data-progress="37"] .circle .fill.fix {
+  -webkit-transform: rotate(133.2deg);
+  -ms-transform: rotate(133.2deg);
+  transform: rotate(133.2deg);
+}
+.radial-progress[data-progress="37"] .inset .percentage .numbers {
+  width: 1140px;
+  text-shadow: 0 0 2px #ffb400 !important;
+}
+.radial-progress[data-progress="37"] .mask .fill {
+  background-color: #ffb400 !important;
+}
+.radial-progress[data-progress="38"] .circle .mask.full,
+.radial-progress[data-progress="38"] .circle .fill {
+  -webkit-transform: rotate(68.4deg);
+  -ms-transform: rotate(68.4deg);
+  transform: rotate(68.4deg);
+}
+.radial-progress[data-progress="38"] .circle .fill.fix {
+  -webkit-transform: rotate(136.8deg);
+  -ms-transform: rotate(136.8deg);
+  transform: rotate(136.8deg);
+}
+.radial-progress[data-progress="38"] .inset .percentage .numbers {
+  width: 1170px;
+  text-shadow: 0 0 2px #ffb900 !important;
+}
+.radial-progress[data-progress="38"] .mask .fill {
+  background-color: #ffb900 !important;
+}
+.radial-progress[data-progress="39"] .circle .mask.full,
+.radial-progress[data-progress="39"] .circle .fill {
+  -webkit-transform: rotate(70.2deg);
+  -ms-transform: rotate(70.2deg);
+  transform: rotate(70.2deg);
+}
+.radial-progress[data-progress="39"] .circle .fill.fix {
+  -webkit-transform: rotate(140.4deg);
+  -ms-transform: rotate(140.4deg);
+  transform: rotate(140.4deg);
+}
+.radial-progress[data-progress="39"] .inset .percentage .numbers {
+  width: 1200px;
+  text-shadow: 0 0 2px #ffbe00 !important;
+}
+.radial-progress[data-progress="39"] .mask .fill {
+  background-color: #ffbe00 !important;
+}
+.radial-progress[data-progress="40"] .circle .mask.full,
+.radial-progress[data-progress="40"] .circle .fill {
+  -webkit-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.radial-progress[data-progress="40"] .circle .fill.fix {
+  -webkit-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.radial-progress[data-progress="40"] .inset .percentage .numbers {
+  width: 1230px;
+  text-shadow: 0 0 2px #ffc300 !important;
+}
+.radial-progress[data-progress="40"] .mask .fill {
+  background-color: #ffc300 !important;
+}
+.radial-progress[data-progress="41"] .circle .mask.full,
+.radial-progress[data-progress="41"] .circle .fill {
+  -webkit-transform: rotate(73.8deg);
+  -ms-transform: rotate(73.8deg);
+  transform: rotate(73.8deg);
+}
+.radial-progress[data-progress="41"] .circle .fill.fix {
+  -webkit-transform: rotate(147.6deg);
+  -ms-transform: rotate(147.6deg);
+  transform: rotate(147.6deg);
+}
+.radial-progress[data-progress="41"] .inset .percentage .numbers {
+  width: 1260px;
+  text-shadow: 0 0 2px #ffc800 !important;
+}
+.radial-progress[data-progress="41"] .mask .fill {
+  background-color: #ffc800 !important;
+}
+.radial-progress[data-progress="42"] .circle .mask.full,
+.radial-progress[data-progress="42"] .circle .fill {
+  -webkit-transform: rotate(75.6deg);
+  -ms-transform: rotate(75.6deg);
+  transform: rotate(75.6deg);
+}
+.radial-progress[data-progress="42"] .circle .fill.fix {
+  -webkit-transform: rotate(151.2deg);
+  -ms-transform: rotate(151.2deg);
+  transform: rotate(151.2deg);
+}
+.radial-progress[data-progress="42"] .inset .percentage .numbers {
+  width: 1290px;
+  text-shadow: 0 0 2px #ffcd00 !important;
+}
+.radial-progress[data-progress="42"] .mask .fill {
+  background-color: #ffcd00 !important;
+}
+.radial-progress[data-progress="43"] .circle .mask.full,
+.radial-progress[data-progress="43"] .circle .fill {
+  -webkit-transform: rotate(77.4deg);
+  -ms-transform: rotate(77.4deg);
+  transform: rotate(77.4deg);
+}
+.radial-progress[data-progress="43"] .circle .fill.fix {
+  -webkit-transform: rotate(154.8deg);
+  -ms-transform: rotate(154.8deg);
+  transform: rotate(154.8deg);
+}
+.radial-progress[data-progress="43"] .inset .percentage .numbers {
+  width: 1320px;
+  text-shadow: 0 0 2px #ffd200 !important;
+}
+.radial-progress[data-progress="43"] .mask .fill {
+  background-color: #ffd200 !important;
+}
+.radial-progress[data-progress="44"] .circle .mask.full,
+.radial-progress[data-progress="44"] .circle .fill {
+  -webkit-transform: rotate(79.2deg);
+  -ms-transform: rotate(79.2deg);
+  transform: rotate(79.2deg);
+}
+.radial-progress[data-progress="44"] .circle .fill.fix {
+  -webkit-transform: rotate(158.4deg);
+  -ms-transform: rotate(158.4deg);
+  transform: rotate(158.4deg);
+}
+.radial-progress[data-progress="44"] .inset .percentage .numbers {
+  width: 1350px;
+  text-shadow: 0 0 2px #ffd700 !important;
+}
+.radial-progress[data-progress="44"] .mask .fill {
+  background-color: #ffd700 !important;
+}
+.radial-progress[data-progress="45"] .circle .mask.full,
+.radial-progress[data-progress="45"] .circle .fill {
+  -webkit-transform: rotate(81deg);
+  -ms-transform: rotate(81deg);
+  transform: rotate(81deg);
+}
+.radial-progress[data-progress="45"] .circle .fill.fix {
+  -webkit-transform: rotate(162deg);
+  -ms-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+.radial-progress[data-progress="45"] .inset .percentage .numbers {
+  width: 1380px;
+  text-shadow: 0 0 2px #ffdc00 !important;
+}
+.radial-progress[data-progress="45"] .mask .fill {
+  background-color: #ffdc00 !important;
+}
+.radial-progress[data-progress="46"] .circle .mask.full,
+.radial-progress[data-progress="46"] .circle .fill {
+  -webkit-transform: rotate(82.8deg);
+  -ms-transform: rotate(82.8deg);
+  transform: rotate(82.8deg);
+}
+.radial-progress[data-progress="46"] .circle .fill.fix {
+  -webkit-transform: rotate(165.6deg);
+  -ms-transform: rotate(165.6deg);
+  transform: rotate(165.6deg);
+}
+.radial-progress[data-progress="46"] .inset .percentage .numbers {
+  width: 1410px;
+  text-shadow: 0 0 2px #ffe100 !important;
+}
+.radial-progress[data-progress="46"] .mask .fill {
+  background-color: #ffe100 !important;
+}
+.radial-progress[data-progress="47"] .circle .mask.full,
+.radial-progress[data-progress="47"] .circle .fill {
+  -webkit-transform: rotate(84.6deg);
+  -ms-transform: rotate(84.6deg);
+  transform: rotate(84.6deg);
+}
+.radial-progress[data-progress="47"] .circle .fill.fix {
+  -webkit-transform: rotate(169.2deg);
+  -ms-transform: rotate(169.2deg);
+  transform: rotate(169.2deg);
+}
+.radial-progress[data-progress="47"] .inset .percentage .numbers {
+  width: 1440px;
+  text-shadow: 0 0 2px #ffe600 !important;
+}
+.radial-progress[data-progress="47"] .mask .fill {
+  background-color: #ffe600 !important;
+}
+.radial-progress[data-progress="48"] .circle .mask.full,
+.radial-progress[data-progress="48"] .circle .fill {
+  -webkit-transform: rotate(86.4deg);
+  -ms-transform: rotate(86.4deg);
+  transform: rotate(86.4deg);
+}
+.radial-progress[data-progress="48"] .circle .fill.fix {
+  -webkit-transform: rotate(172.8deg);
+  -ms-transform: rotate(172.8deg);
+  transform: rotate(172.8deg);
+}
+.radial-progress[data-progress="48"] .inset .percentage .numbers {
+  width: 1470px;
+  text-shadow: 0 0 2px #ffeb00 !important;
+}
+.radial-progress[data-progress="48"] .mask .fill {
+  background-color: #ffeb00 !important;
+}
+.radial-progress[data-progress="49"] .circle .mask.full,
+.radial-progress[data-progress="49"] .circle .fill {
+  -webkit-transform: rotate(88.2deg);
+  -ms-transform: rotate(88.2deg);
+  transform: rotate(88.2deg);
+}
+.radial-progress[data-progress="49"] .circle .fill.fix {
+  -webkit-transform: rotate(176.4deg);
+  -ms-transform: rotate(176.4deg);
+  transform: rotate(176.4deg);
+}
+.radial-progress[data-progress="49"] .inset .percentage .numbers {
+  width: 1500px;
+  text-shadow: 0 0 2px #fff000 !important;
+}
+.radial-progress[data-progress="49"] .mask .fill {
+  background-color: #fff000 !important;
+}
+.radial-progress[data-progress="50"] .circle .mask.full,
+.radial-progress[data-progress="50"] .circle .fill {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.radial-progress[data-progress="50"] .circle .fill.fix {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.radial-progress[data-progress="50"] .inset .percentage .numbers {
+  width: 1530px;
+  text-shadow: 0 0 2px #fff500 !important;
+}
+.radial-progress[data-progress="50"] .mask .fill {
+  background-color: #fff500 !important;
+}
+.radial-progress[data-progress="51"] .circle .mask.full,
+.radial-progress[data-progress="51"] .circle .fill {
+  -webkit-transform: rotate(91.8deg);
+  -ms-transform: rotate(91.8deg);
+  transform: rotate(91.8deg);
+}
+.radial-progress[data-progress="51"] .circle .fill.fix {
+  -webkit-transform: rotate(183.6deg);
+  -ms-transform: rotate(183.6deg);
+  transform: rotate(183.6deg);
+}
+.radial-progress[data-progress="51"] .inset .percentage .numbers {
+  width: 1560px;
+  text-shadow: 0 0 2px #fafa00 !important;
+}
+.radial-progress[data-progress="51"] .mask .fill {
+  background-color: #fafa00 !important;
+}
+.radial-progress[data-progress="52"] .circle .mask.full,
+.radial-progress[data-progress="52"] .circle .fill {
+  -webkit-transform: rotate(93.6deg);
+  -ms-transform: rotate(93.6deg);
+  transform: rotate(93.6deg);
+}
+.radial-progress[data-progress="52"] .circle .fill.fix {
+  -webkit-transform: rotate(187.2deg);
+  -ms-transform: rotate(187.2deg);
+  transform: rotate(187.2deg);
+}
+.radial-progress[data-progress="52"] .inset .percentage .numbers {
+  width: 1590px;
+  text-shadow: 0 0 2px #f5ff00 !important;
+}
+.radial-progress[data-progress="52"] .mask .fill {
+  background-color: #f5ff00 !important;
+}
+.radial-progress[data-progress="53"] .circle .mask.full,
+.radial-progress[data-progress="53"] .circle .fill {
+  -webkit-transform: rotate(95.4deg);
+  -ms-transform: rotate(95.4deg);
+  transform: rotate(95.4deg);
+}
+.radial-progress[data-progress="53"] .circle .fill.fix {
+  -webkit-transform: rotate(190.8deg);
+  -ms-transform: rotate(190.8deg);
+  transform: rotate(190.8deg);
+}
+.radial-progress[data-progress="53"] .inset .percentage .numbers {
+  width: 1620px;
+  text-shadow: 0 0 2px #f0ff00 !important;
+}
+.radial-progress[data-progress="53"] .mask .fill {
+  background-color: #f0ff00 !important;
+}
+.radial-progress[data-progress="54"] .circle .mask.full,
+.radial-progress[data-progress="54"] .circle .fill {
+  -webkit-transform: rotate(97.2deg);
+  -ms-transform: rotate(97.2deg);
+  transform: rotate(97.2deg);
+}
+.radial-progress[data-progress="54"] .circle .fill.fix {
+  -webkit-transform: rotate(194.4deg);
+  -ms-transform: rotate(194.4deg);
+  transform: rotate(194.4deg);
+}
+.radial-progress[data-progress="54"] .inset .percentage .numbers {
+  width: 1650px;
+  text-shadow: 0 0 2px #ebff00 !important;
+}
+.radial-progress[data-progress="54"] .mask .fill {
+  background-color: #ebff00 !important;
+}
+.radial-progress[data-progress="55"] .circle .mask.full,
+.radial-progress[data-progress="55"] .circle .fill {
+  -webkit-transform: rotate(99deg);
+  -ms-transform: rotate(99deg);
+  transform: rotate(99deg);
+}
+.radial-progress[data-progress="55"] .circle .fill.fix {
+  -webkit-transform: rotate(198deg);
+  -ms-transform: rotate(198deg);
+  transform: rotate(198deg);
+}
+.radial-progress[data-progress="55"] .inset .percentage .numbers {
+  width: 1680px;
+  text-shadow: 0 0 2px #e6ff00 !important;
+}
+.radial-progress[data-progress="55"] .mask .fill {
+  background-color: #e6ff00 !important;
+}
+.radial-progress[data-progress="56"] .circle .mask.full,
+.radial-progress[data-progress="56"] .circle .fill {
+  -webkit-transform: rotate(100.8deg);
+  -ms-transform: rotate(100.8deg);
+  transform: rotate(100.8deg);
+}
+.radial-progress[data-progress="56"] .circle .fill.fix {
+  -webkit-transform: rotate(201.6deg);
+  -ms-transform: rotate(201.6deg);
+  transform: rotate(201.6deg);
+}
+.radial-progress[data-progress="56"] .inset .percentage .numbers {
+  width: 1710px;
+  text-shadow: 0 0 2px #e1ff00 !important;
+}
+.radial-progress[data-progress="56"] .mask .fill {
+  background-color: #e1ff00 !important;
+}
+.radial-progress[data-progress="57"] .circle .mask.full,
+.radial-progress[data-progress="57"] .circle .fill {
+  -webkit-transform: rotate(102.6deg);
+  -ms-transform: rotate(102.6deg);
+  transform: rotate(102.6deg);
+}
+.radial-progress[data-progress="57"] .circle .fill.fix {
+  -webkit-transform: rotate(205.2deg);
+  -ms-transform: rotate(205.2deg);
+  transform: rotate(205.2deg);
+}
+.radial-progress[data-progress="57"] .inset .percentage .numbers {
+  width: 1740px;
+  text-shadow: 0 0 2px #dcff00 !important;
+}
+.radial-progress[data-progress="57"] .mask .fill {
+  background-color: #dcff00 !important;
+}
+.radial-progress[data-progress="58"] .circle .mask.full,
+.radial-progress[data-progress="58"] .circle .fill {
+  -webkit-transform: rotate(104.4deg);
+  -ms-transform: rotate(104.4deg);
+  transform: rotate(104.4deg);
+}
+.radial-progress[data-progress="58"] .circle .fill.fix {
+  -webkit-transform: rotate(208.8deg);
+  -ms-transform: rotate(208.8deg);
+  transform: rotate(208.8deg);
+}
+.radial-progress[data-progress="58"] .inset .percentage .numbers {
+  width: 1770px;
+  text-shadow: 0 0 2px #d7ff00 !important;
+}
+.radial-progress[data-progress="58"] .mask .fill {
+  background-color: #d7ff00 !important;
+}
+.radial-progress[data-progress="59"] .circle .mask.full,
+.radial-progress[data-progress="59"] .circle .fill {
+  -webkit-transform: rotate(106.2deg);
+  -ms-transform: rotate(106.2deg);
+  transform: rotate(106.2deg);
+}
+.radial-progress[data-progress="59"] .circle .fill.fix {
+  -webkit-transform: rotate(212.4deg);
+  -ms-transform: rotate(212.4deg);
+  transform: rotate(212.4deg);
+}
+.radial-progress[data-progress="59"] .inset .percentage .numbers {
+  width: 1800px;
+  text-shadow: 0 0 2px #d2ff00 !important;
+}
+.radial-progress[data-progress="59"] .mask .fill {
+  background-color: #d2ff00 !important;
+}
+.radial-progress[data-progress="60"] .circle .mask.full,
+.radial-progress[data-progress="60"] .circle .fill {
+  -webkit-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+.radial-progress[data-progress="60"] .circle .fill.fix {
+  -webkit-transform: rotate(216deg);
+  -ms-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+.radial-progress[data-progress="60"] .inset .percentage .numbers {
+  width: 1830px;
+  text-shadow: 0 0 2px #cdff00 !important;
+}
+.radial-progress[data-progress="60"] .mask .fill {
+  background-color: #cdff00 !important;
+}
+.radial-progress[data-progress="61"] .circle .mask.full,
+.radial-progress[data-progress="61"] .circle .fill {
+  -webkit-transform: rotate(109.8deg);
+  -ms-transform: rotate(109.8deg);
+  transform: rotate(109.8deg);
+}
+.radial-progress[data-progress="61"] .circle .fill.fix {
+  -webkit-transform: rotate(219.6deg);
+  -ms-transform: rotate(219.6deg);
+  transform: rotate(219.6deg);
+}
+.radial-progress[data-progress="61"] .inset .percentage .numbers {
+  width: 1860px;
+  text-shadow: 0 0 2px #c8ff00 !important;
+}
+.radial-progress[data-progress="61"] .mask .fill {
+  background-color: #c8ff00 !important;
+}
+.radial-progress[data-progress="62"] .circle .mask.full,
+.radial-progress[data-progress="62"] .circle .fill {
+  -webkit-transform: rotate(111.6deg);
+  -ms-transform: rotate(111.6deg);
+  transform: rotate(111.6deg);
+}
+.radial-progress[data-progress="62"] .circle .fill.fix {
+  -webkit-transform: rotate(223.2deg);
+  -ms-transform: rotate(223.2deg);
+  transform: rotate(223.2deg);
+}
+.radial-progress[data-progress="62"] .inset .percentage .numbers {
+  width: 1890px;
+  text-shadow: 0 0 2px #c3ff00 !important;
+}
+.radial-progress[data-progress="62"] .mask .fill {
+  background-color: #c3ff00 !important;
+}
+.radial-progress[data-progress="63"] .circle .mask.full,
+.radial-progress[data-progress="63"] .circle .fill {
+  -webkit-transform: rotate(113.4deg);
+  -ms-transform: rotate(113.4deg);
+  transform: rotate(113.4deg);
+}
+.radial-progress[data-progress="63"] .circle .fill.fix {
+  -webkit-transform: rotate(226.8deg);
+  -ms-transform: rotate(226.8deg);
+  transform: rotate(226.8deg);
+}
+.radial-progress[data-progress="63"] .inset .percentage .numbers {
+  width: 1920px;
+  text-shadow: 0 0 2px #beff00 !important;
+}
+.radial-progress[data-progress="63"] .mask .fill {
+  background-color: #beff00 !important;
+}
+.radial-progress[data-progress="64"] .circle .mask.full,
+.radial-progress[data-progress="64"] .circle .fill {
+  -webkit-transform: rotate(115.2deg);
+  -ms-transform: rotate(115.2deg);
+  transform: rotate(115.2deg);
+}
+.radial-progress[data-progress="64"] .circle .fill.fix {
+  -webkit-transform: rotate(230.4deg);
+  -ms-transform: rotate(230.4deg);
+  transform: rotate(230.4deg);
+}
+.radial-progress[data-progress="64"] .inset .percentage .numbers {
+  width: 1950px;
+  text-shadow: 0 0 2px #b9ff00 !important;
+}
+.radial-progress[data-progress="64"] .mask .fill {
+  background-color: #b9ff00 !important;
+}
+.radial-progress[data-progress="65"] .circle .mask.full,
+.radial-progress[data-progress="65"] .circle .fill {
+  -webkit-transform: rotate(117deg);
+  -ms-transform: rotate(117deg);
+  transform: rotate(117deg);
+}
+.radial-progress[data-progress="65"] .circle .fill.fix {
+  -webkit-transform: rotate(234deg);
+  -ms-transform: rotate(234deg);
+  transform: rotate(234deg);
+}
+.radial-progress[data-progress="65"] .inset .percentage .numbers {
+  width: 1980px;
+  text-shadow: 0 0 2px #b4ff00 !important;
+}
+.radial-progress[data-progress="65"] .mask .fill {
+  background-color: #b4ff00 !important;
+}
+.radial-progress[data-progress="66"] .circle .mask.full,
+.radial-progress[data-progress="66"] .circle .fill {
+  -webkit-transform: rotate(118.8deg);
+  -ms-transform: rotate(118.8deg);
+  transform: rotate(118.8deg);
+}
+.radial-progress[data-progress="66"] .circle .fill.fix {
+  -webkit-transform: rotate(237.6deg);
+  -ms-transform: rotate(237.6deg);
+  transform: rotate(237.6deg);
+}
+.radial-progress[data-progress="66"] .inset .percentage .numbers {
+  width: 2010px;
+  text-shadow: 0 0 2px #afff00 !important;
+}
+.radial-progress[data-progress="66"] .mask .fill {
+  background-color: #afff00 !important;
+}
+.radial-progress[data-progress="67"] .circle .mask.full,
+.radial-progress[data-progress="67"] .circle .fill {
+  -webkit-transform: rotate(120.6deg);
+  -ms-transform: rotate(120.6deg);
+  transform: rotate(120.6deg);
+}
+.radial-progress[data-progress="67"] .circle .fill.fix {
+  -webkit-transform: rotate(241.2deg);
+  -ms-transform: rotate(241.2deg);
+  transform: rotate(241.2deg);
+}
+.radial-progress[data-progress="67"] .inset .percentage .numbers {
+  width: 2040px;
+  text-shadow: 0 0 2px #aaff00 !important;
+}
+.radial-progress[data-progress="67"] .mask .fill {
+  background-color: #aaff00 !important;
+}
+.radial-progress[data-progress="68"] .circle .mask.full,
+.radial-progress[data-progress="68"] .circle .fill {
+  -webkit-transform: rotate(122.4deg);
+  -ms-transform: rotate(122.4deg);
+  transform: rotate(122.4deg);
+}
+.radial-progress[data-progress="68"] .circle .fill.fix {
+  -webkit-transform: rotate(244.8deg);
+  -ms-transform: rotate(244.8deg);
+  transform: rotate(244.8deg);
+}
+.radial-progress[data-progress="68"] .inset .percentage .numbers {
+  width: 2070px;
+  text-shadow: 0 0 2px #a5ff00 !important;
+}
+.radial-progress[data-progress="68"] .mask .fill {
+  background-color: #a5ff00 !important;
+}
+.radial-progress[data-progress="69"] .circle .mask.full,
+.radial-progress[data-progress="69"] .circle .fill {
+  -webkit-transform: rotate(124.2deg);
+  -ms-transform: rotate(124.2deg);
+  transform: rotate(124.2deg);
+}
+.radial-progress[data-progress="69"] .circle .fill.fix {
+  -webkit-transform: rotate(248.4deg);
+  -ms-transform: rotate(248.4deg);
+  transform: rotate(248.4deg);
+}
+.radial-progress[data-progress="69"] .inset .percentage .numbers {
+  width: 2100px;
+  text-shadow: 0 0 2px #a0ff00 !important;
+}
+.radial-progress[data-progress="69"] .mask .fill {
+  background-color: #a0ff00 !important;
+}
+.radial-progress[data-progress="70"] .circle .mask.full,
+.radial-progress[data-progress="70"] .circle .fill {
+  -webkit-transform: rotate(126deg);
+  -ms-transform: rotate(126deg);
+  transform: rotate(126deg);
+}
+.radial-progress[data-progress="70"] .circle .fill.fix {
+  -webkit-transform: rotate(252deg);
+  -ms-transform: rotate(252deg);
+  transform: rotate(252deg);
+}
+.radial-progress[data-progress="70"] .inset .percentage .numbers {
+  width: 2130px;
+  text-shadow: 0 0 2px #9bff00 !important;
+}
+.radial-progress[data-progress="70"] .mask .fill {
+  background-color: #9bff00 !important;
+}
+.radial-progress[data-progress="71"] .circle .mask.full,
+.radial-progress[data-progress="71"] .circle .fill {
+  -webkit-transform: rotate(127.8deg);
+  -ms-transform: rotate(127.8deg);
+  transform: rotate(127.8deg);
+}
+.radial-progress[data-progress="71"] .circle .fill.fix {
+  -webkit-transform: rotate(255.6deg);
+  -ms-transform: rotate(255.6deg);
+  transform: rotate(255.6deg);
+}
+.radial-progress[data-progress="71"] .inset .percentage .numbers {
+  width: 2160px;
+  text-shadow: 0 0 2px #96ff00 !important;
+}
+.radial-progress[data-progress="71"] .mask .fill {
+  background-color: #96ff00 !important;
+}
+.radial-progress[data-progress="72"] .circle .mask.full,
+.radial-progress[data-progress="72"] .circle .fill {
+  -webkit-transform: rotate(129.6deg);
+  -ms-transform: rotate(129.6deg);
+  transform: rotate(129.6deg);
+}
+.radial-progress[data-progress="72"] .circle .fill.fix {
+  -webkit-transform: rotate(259.2deg);
+  -ms-transform: rotate(259.2deg);
+  transform: rotate(259.2deg);
+}
+.radial-progress[data-progress="72"] .inset .percentage .numbers {
+  width: 2190px;
+  text-shadow: 0 0 2px #91ff00 !important;
+}
+.radial-progress[data-progress="72"] .mask .fill {
+  background-color: #91ff00 !important;
+}
+.radial-progress[data-progress="73"] .circle .mask.full,
+.radial-progress[data-progress="73"] .circle .fill {
+  -webkit-transform: rotate(131.4deg);
+  -ms-transform: rotate(131.4deg);
+  transform: rotate(131.4deg);
+}
+.radial-progress[data-progress="73"] .circle .fill.fix {
+  -webkit-transform: rotate(262.8deg);
+  -ms-transform: rotate(262.8deg);
+  transform: rotate(262.8deg);
+}
+.radial-progress[data-progress="73"] .inset .percentage .numbers {
+  width: 2220px;
+  text-shadow: 0 0 2px #8cff00 !important;
+}
+.radial-progress[data-progress="73"] .mask .fill {
+  background-color: #8cff00 !important;
+}
+.radial-progress[data-progress="74"] .circle .mask.full,
+.radial-progress[data-progress="74"] .circle .fill {
+  -webkit-transform: rotate(133.2deg);
+  -ms-transform: rotate(133.2deg);
+  transform: rotate(133.2deg);
+}
+.radial-progress[data-progress="74"] .circle .fill.fix {
+  -webkit-transform: rotate(266.4deg);
+  -ms-transform: rotate(266.4deg);
+  transform: rotate(266.4deg);
+}
+.radial-progress[data-progress="74"] .inset .percentage .numbers {
+  width: 2250px;
+  text-shadow: 0 0 2px #87ff00 !important;
+}
+.radial-progress[data-progress="74"] .mask .fill {
+  background-color: #87ff00 !important;
+}
+.radial-progress[data-progress="75"] .circle .mask.full,
+.radial-progress[data-progress="75"] .circle .fill {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.radial-progress[data-progress="75"] .circle .fill.fix {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.radial-progress[data-progress="75"] .inset .percentage .numbers {
+  width: 2280px;
+  text-shadow: 0 0 2px #82ff00 !important;
+}
+.radial-progress[data-progress="75"] .mask .fill {
+  background-color: #82ff00 !important;
+}
+.radial-progress[data-progress="76"] .circle .mask.full,
+.radial-progress[data-progress="76"] .circle .fill {
+  -webkit-transform: rotate(136.8deg);
+  -ms-transform: rotate(136.8deg);
+  transform: rotate(136.8deg);
+}
+.radial-progress[data-progress="76"] .circle .fill.fix {
+  -webkit-transform: rotate(273.6deg);
+  -ms-transform: rotate(273.6deg);
+  transform: rotate(273.6deg);
+}
+.radial-progress[data-progress="76"] .inset .percentage .numbers {
+  width: 2310px;
+  text-shadow: 0 0 2px #7dff00 !important;
+}
+.radial-progress[data-progress="76"] .mask .fill {
+  background-color: #7dff00 !important;
+}
+.radial-progress[data-progress="77"] .circle .mask.full,
+.radial-progress[data-progress="77"] .circle .fill {
+  -webkit-transform: rotate(138.6deg);
+  -ms-transform: rotate(138.6deg);
+  transform: rotate(138.6deg);
+}
+.radial-progress[data-progress="77"] .circle .fill.fix {
+  -webkit-transform: rotate(277.2deg);
+  -ms-transform: rotate(277.2deg);
+  transform: rotate(277.2deg);
+}
+.radial-progress[data-progress="77"] .inset .percentage .numbers {
+  width: 2340px;
+  text-shadow: 0 0 2px #78ff00 !important;
+}
+.radial-progress[data-progress="77"] .mask .fill {
+  background-color: #78ff00 !important;
+}
+.radial-progress[data-progress="78"] .circle .mask.full,
+.radial-progress[data-progress="78"] .circle .fill {
+  -webkit-transform: rotate(140.4deg);
+  -ms-transform: rotate(140.4deg);
+  transform: rotate(140.4deg);
+}
+.radial-progress[data-progress="78"] .circle .fill.fix {
+  -webkit-transform: rotate(280.8deg);
+  -ms-transform: rotate(280.8deg);
+  transform: rotate(280.8deg);
+}
+.radial-progress[data-progress="78"] .inset .percentage .numbers {
+  width: 2370px;
+  text-shadow: 0 0 2px #73ff00 !important;
+}
+.radial-progress[data-progress="78"] .mask .fill {
+  background-color: #73ff00 !important;
+}
+.radial-progress[data-progress="79"] .circle .mask.full,
+.radial-progress[data-progress="79"] .circle .fill {
+  -webkit-transform: rotate(142.2deg);
+  -ms-transform: rotate(142.2deg);
+  transform: rotate(142.2deg);
+}
+.radial-progress[data-progress="79"] .circle .fill.fix {
+  -webkit-transform: rotate(284.4deg);
+  -ms-transform: rotate(284.4deg);
+  transform: rotate(284.4deg);
+}
+.radial-progress[data-progress="79"] .inset .percentage .numbers {
+  width: 2400px;
+  text-shadow: 0 0 2px #6eff00 !important;
+}
+.radial-progress[data-progress="79"] .mask .fill {
+  background-color: #6eff00 !important;
+}
+.radial-progress[data-progress="80"] .circle .mask.full,
+.radial-progress[data-progress="80"] .circle .fill {
+  -webkit-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.radial-progress[data-progress="80"] .circle .fill.fix {
+  -webkit-transform: rotate(288deg);
+  -ms-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.radial-progress[data-progress="80"] .inset .percentage .numbers {
+  width: 2430px;
+  text-shadow: 0 0 2px #69ff00 !important;
+}
+.radial-progress[data-progress="80"] .mask .fill {
+  background-color: #69ff00 !important;
+}
+.radial-progress[data-progress="81"] .circle .mask.full,
+.radial-progress[data-progress="81"] .circle .fill {
+  -webkit-transform: rotate(145.8deg);
+  -ms-transform: rotate(145.8deg);
+  transform: rotate(145.8deg);
+}
+.radial-progress[data-progress="81"] .circle .fill.fix {
+  -webkit-transform: rotate(291.6deg);
+  -ms-transform: rotate(291.6deg);
+  transform: rotate(291.6deg);
+}
+.radial-progress[data-progress="81"] .inset .percentage .numbers {
+  width: 2460px;
+  text-shadow: 0 0 2px #64ff00 !important;
+}
+.radial-progress[data-progress="81"] .mask .fill {
+  background-color: #64ff00 !important;
+}
+.radial-progress[data-progress="82"] .circle .mask.full,
+.radial-progress[data-progress="82"] .circle .fill {
+  -webkit-transform: rotate(147.6deg);
+  -ms-transform: rotate(147.6deg);
+  transform: rotate(147.6deg);
+}
+.radial-progress[data-progress="82"] .circle .fill.fix {
+  -webkit-transform: rotate(295.2deg);
+  -ms-transform: rotate(295.2deg);
+  transform: rotate(295.2deg);
+}
+.radial-progress[data-progress="82"] .inset .percentage .numbers {
+  width: 2490px;
+  text-shadow: 0 0 2px #5fff00 !important;
+}
+.radial-progress[data-progress="82"] .mask .fill {
+  background-color: #5fff00 !important;
+}
+.radial-progress[data-progress="83"] .circle .mask.full,
+.radial-progress[data-progress="83"] .circle .fill {
+  -webkit-transform: rotate(149.4deg);
+  -ms-transform: rotate(149.4deg);
+  transform: rotate(149.4deg);
+}
+.radial-progress[data-progress="83"] .circle .fill.fix {
+  -webkit-transform: rotate(298.8deg);
+  -ms-transform: rotate(298.8deg);
+  transform: rotate(298.8deg);
+}
+.radial-progress[data-progress="83"] .inset .percentage .numbers {
+  width: 2520px;
+  text-shadow: 0 0 2px #5aff00 !important;
+}
+.radial-progress[data-progress="83"] .mask .fill {
+  background-color: #5aff00 !important;
+}
+.radial-progress[data-progress="84"] .circle .mask.full,
+.radial-progress[data-progress="84"] .circle .fill {
+  -webkit-transform: rotate(151.2deg);
+  -ms-transform: rotate(151.2deg);
+  transform: rotate(151.2deg);
+}
+.radial-progress[data-progress="84"] .circle .fill.fix {
+  -webkit-transform: rotate(302.4deg);
+  -ms-transform: rotate(302.4deg);
+  transform: rotate(302.4deg);
+}
+.radial-progress[data-progress="84"] .inset .percentage .numbers {
+  width: 2550px;
+  text-shadow: 0 0 2px #55ff00 !important;
+}
+.radial-progress[data-progress="84"] .mask .fill {
+  background-color: #55ff00 !important;
+}
+.radial-progress[data-progress="85"] .circle .mask.full,
+.radial-progress[data-progress="85"] .circle .fill {
+  -webkit-transform: rotate(153deg);
+  -ms-transform: rotate(153deg);
+  transform: rotate(153deg);
+}
+.radial-progress[data-progress="85"] .circle .fill.fix {
+  -webkit-transform: rotate(306deg);
+  -ms-transform: rotate(306deg);
+  transform: rotate(306deg);
+}
+.radial-progress[data-progress="85"] .inset .percentage .numbers {
+  width: 2580px;
+  text-shadow: 0 0 2px #50ff00 !important;
+}
+.radial-progress[data-progress="85"] .mask .fill {
+  background-color: #50ff00 !important;
+}
+.radial-progress[data-progress="86"] .circle .mask.full,
+.radial-progress[data-progress="86"] .circle .fill {
+  -webkit-transform: rotate(154.8deg);
+  -ms-transform: rotate(154.8deg);
+  transform: rotate(154.8deg);
+}
+.radial-progress[data-progress="86"] .circle .fill.fix {
+  -webkit-transform: rotate(309.6deg);
+  -ms-transform: rotate(309.6deg);
+  transform: rotate(309.6deg);
+}
+.radial-progress[data-progress="86"] .inset .percentage .numbers {
+  width: 2610px;
+  text-shadow: 0 0 2px #4bff00 !important;
+}
+.radial-progress[data-progress="86"] .mask .fill {
+  background-color: #4bff00 !important;
+}
+.radial-progress[data-progress="87"] .circle .mask.full,
+.radial-progress[data-progress="87"] .circle .fill {
+  -webkit-transform: rotate(156.6deg);
+  -ms-transform: rotate(156.6deg);
+  transform: rotate(156.6deg);
+}
+.radial-progress[data-progress="87"] .circle .fill.fix {
+  -webkit-transform: rotate(313.2deg);
+  -ms-transform: rotate(313.2deg);
+  transform: rotate(313.2deg);
+}
+.radial-progress[data-progress="87"] .inset .percentage .numbers {
+  width: 2640px;
+  text-shadow: 0 0 2px #46ff00 !important;
+}
+.radial-progress[data-progress="87"] .mask .fill {
+  background-color: #46ff00 !important;
+}
+.radial-progress[data-progress="88"] .circle .mask.full,
+.radial-progress[data-progress="88"] .circle .fill {
+  -webkit-transform: rotate(158.4deg);
+  -ms-transform: rotate(158.4deg);
+  transform: rotate(158.4deg);
+}
+.radial-progress[data-progress="88"] .circle .fill.fix {
+  -webkit-transform: rotate(316.8deg);
+  -ms-transform: rotate(316.8deg);
+  transform: rotate(316.8deg);
+}
+.radial-progress[data-progress="88"] .inset .percentage .numbers {
+  width: 2670px;
+  text-shadow: 0 0 2px #41ff00 !important;
+}
+.radial-progress[data-progress="88"] .mask .fill {
+  background-color: #41ff00 !important;
+}
+.radial-progress[data-progress="89"] .circle .mask.full,
+.radial-progress[data-progress="89"] .circle .fill {
+  -webkit-transform: rotate(160.2deg);
+  -ms-transform: rotate(160.2deg);
+  transform: rotate(160.2deg);
+}
+.radial-progress[data-progress="89"] .circle .fill.fix {
+  -webkit-transform: rotate(320.4deg);
+  -ms-transform: rotate(320.4deg);
+  transform: rotate(320.4deg);
+}
+.radial-progress[data-progress="89"] .inset .percentage .numbers {
+  width: 2700px;
+  text-shadow: 0 0 2px #3cff00 !important;
+}
+.radial-progress[data-progress="89"] .mask .fill {
+  background-color: #3cff00 !important;
+}
+.radial-progress[data-progress="90"] .circle .mask.full,
+.radial-progress[data-progress="90"] .circle .fill {
+  -webkit-transform: rotate(162deg);
+  -ms-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+.radial-progress[data-progress="90"] .circle .fill.fix {
+  -webkit-transform: rotate(324deg);
+  -ms-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+.radial-progress[data-progress="90"] .inset .percentage .numbers {
+  width: 2730px;
+  text-shadow: 0 0 2px #37ff00 !important;
+}
+.radial-progress[data-progress="90"] .mask .fill {
+  background-color: #37ff00 !important;
+}
+.radial-progress[data-progress="91"] .circle .mask.full,
+.radial-progress[data-progress="91"] .circle .fill {
+  -webkit-transform: rotate(163.8deg);
+  -ms-transform: rotate(163.8deg);
+  transform: rotate(163.8deg);
+}
+.radial-progress[data-progress="91"] .circle .fill.fix {
+  -webkit-transform: rotate(327.6deg);
+  -ms-transform: rotate(327.6deg);
+  transform: rotate(327.6deg);
+}
+.radial-progress[data-progress="91"] .inset .percentage .numbers {
+  width: 2760px;
+  text-shadow: 0 0 2px #32ff00 !important;
+}
+.radial-progress[data-progress="91"] .mask .fill {
+  background-color: #32ff00 !important;
+}
+.radial-progress[data-progress="92"] .circle .mask.full,
+.radial-progress[data-progress="92"] .circle .fill {
+  -webkit-transform: rotate(165.6deg);
+  -ms-transform: rotate(165.6deg);
+  transform: rotate(165.6deg);
+}
+.radial-progress[data-progress="92"] .circle .fill.fix {
+  -webkit-transform: rotate(331.2deg);
+  -ms-transform: rotate(331.2deg);
+  transform: rotate(331.2deg);
+}
+.radial-progress[data-progress="92"] .inset .percentage .numbers {
+  width: 2790px;
+  text-shadow: 0 0 2px #2dff00 !important;
+}
+.radial-progress[data-progress="92"] .mask .fill {
+  background-color: #2dff00 !important;
+}
+.radial-progress[data-progress="93"] .circle .mask.full,
+.radial-progress[data-progress="93"] .circle .fill {
+  -webkit-transform: rotate(167.4deg);
+  -ms-transform: rotate(167.4deg);
+  transform: rotate(167.4deg);
+}
+.radial-progress[data-progress="93"] .circle .fill.fix {
+  -webkit-transform: rotate(334.8deg);
+  -ms-transform: rotate(334.8deg);
+  transform: rotate(334.8deg);
+}
+.radial-progress[data-progress="93"] .inset .percentage .numbers {
+  width: 2820px;
+  text-shadow: 0 0 2px #28ff00 !important;
+}
+.radial-progress[data-progress="93"] .mask .fill {
+  background-color: #28ff00 !important;
+}
+.radial-progress[data-progress="94"] .circle .mask.full,
+.radial-progress[data-progress="94"] .circle .fill {
+  -webkit-transform: rotate(169.2deg);
+  -ms-transform: rotate(169.2deg);
+  transform: rotate(169.2deg);
+}
+.radial-progress[data-progress="94"] .circle .fill.fix {
+  -webkit-transform: rotate(338.4deg);
+  -ms-transform: rotate(338.4deg);
+  transform: rotate(338.4deg);
+}
+.radial-progress[data-progress="94"] .inset .percentage .numbers {
+  width: 2850px;
+  text-shadow: 0 0 2px #23ff00 !important;
+}
+.radial-progress[data-progress="94"] .mask .fill {
+  background-color: #23ff00 !important;
+}
+.radial-progress[data-progress="95"] .circle .mask.full,
+.radial-progress[data-progress="95"] .circle .fill {
+  -webkit-transform: rotate(171deg);
+  -ms-transform: rotate(171deg);
+  transform: rotate(171deg);
+}
+.radial-progress[data-progress="95"] .circle .fill.fix {
+  -webkit-transform: rotate(342deg);
+  -ms-transform: rotate(342deg);
+  transform: rotate(342deg);
+}
+.radial-progress[data-progress="95"] .inset .percentage .numbers {
+  width: 2880px;
+  text-shadow: 0 0 2px #1eff00 !important;
+}
+.radial-progress[data-progress="95"] .mask .fill {
+  background-color: #1eff00 !important;
+}
+.radial-progress[data-progress="96"] .circle .mask.full,
+.radial-progress[data-progress="96"] .circle .fill {
+  -webkit-transform: rotate(172.8deg);
+  -ms-transform: rotate(172.8deg);
+  transform: rotate(172.8deg);
+}
+.radial-progress[data-progress="96"] .circle .fill.fix {
+  -webkit-transform: rotate(345.6deg);
+  -ms-transform: rotate(345.6deg);
+  transform: rotate(345.6deg);
+}
+.radial-progress[data-progress="96"] .inset .percentage .numbers {
+  width: 2910px;
+  text-shadow: 0 0 2px #19ff00 !important;
+}
+.radial-progress[data-progress="96"] .mask .fill {
+  background-color: #19ff00 !important;
+}
+.radial-progress[data-progress="97"] .circle .mask.full,
+.radial-progress[data-progress="97"] .circle .fill {
+  -webkit-transform: rotate(174.6deg);
+  -ms-transform: rotate(174.6deg);
+  transform: rotate(174.6deg);
+}
+.radial-progress[data-progress="97"] .circle .fill.fix {
+  -webkit-transform: rotate(349.2deg);
+  -ms-transform: rotate(349.2deg);
+  transform: rotate(349.2deg);
+}
+.radial-progress[data-progress="97"] .inset .percentage .numbers {
+  width: 2940px;
+  text-shadow: 0 0 2px #14ff00 !important;
+}
+.radial-progress[data-progress="97"] .mask .fill {
+  background-color: #14ff00 !important;
+}
+.radial-progress[data-progress="98"] .circle .mask.full,
+.radial-progress[data-progress="98"] .circle .fill {
+  -webkit-transform: rotate(176.4deg);
+  -ms-transform: rotate(176.4deg);
+  transform: rotate(176.4deg);
+}
+.radial-progress[data-progress="98"] .circle .fill.fix {
+  -webkit-transform: rotate(352.8deg);
+  -ms-transform: rotate(352.8deg);
+  transform: rotate(352.8deg);
+}
+.radial-progress[data-progress="98"] .inset .percentage .numbers {
+  width: 2970px;
+  text-shadow: 0 0 2px #0fff00 !important;
+}
+.radial-progress[data-progress="98"] .mask .fill {
+  background-color: #0fff00 !important;
+}
+.radial-progress[data-progress="99"] .circle .mask.full,
+.radial-progress[data-progress="99"] .circle .fill {
+  -webkit-transform: rotate(178.2deg);
+  -ms-transform: rotate(178.2deg);
+  transform: rotate(178.2deg);
+}
+.radial-progress[data-progress="99"] .circle .fill.fix {
+  -webkit-transform: rotate(356.4deg);
+  -ms-transform: rotate(356.4deg);
+  transform: rotate(356.4deg);
+}
+.radial-progress[data-progress="99"] .inset .percentage .numbers {
+  width: 3000px;
+  text-shadow: 0 0 2px #0aff00 !important;
+}
+.radial-progress[data-progress="99"] .mask .fill {
+  background-color: #0aff00 !important;
+}
+.radial-progress[data-progress="100"] .circle .mask.full,
+.radial-progress[data-progress="100"] .circle .fill {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.radial-progress[data-progress="100"] .circle .fill.fix {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.radial-progress[data-progress="100"] .inset .percentage .numbers {
+  width: 3030px;
+  text-shadow: 0 0 2px #05ff00 !important;
+}
+.radial-progress[data-progress="100"] .mask .fill {
+  background-color: #05ff00 !important;
+}
+.radial-progressaverage {
+  margin: 4px;
+  width: 120px;
+  height: 120px;
+  text-align: left;
+  background-color: #d6dadc;
+  border-radius: 50%;
+}
+.radial-progressaverage .circle .mask,
+.radial-progressaverage .circle .fill,
+.radial-progressaverage .circle .shadow {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  border-radius: 50%;
+}
+.radial-progressaverage .circle .shadow {
+  box-shadow: 0 inset;
+}
+.radial-progressaverage .circle .mask,
+.radial-progressaverage .circle .fill {
+  -webkit-backface-visibility: hidden;
+  transition: -webkit-transform 1s;
+  transition: -ms-transform 1s;
+  transition: transform 1s;
+  border-radius: 50%;
+}
+.radial-progressaverage .circle .mask {
+  clip: rect(0px, 120px, 120px, 60px);
+}
+.radial-progressaverage .circle .mask .fill {
+  clip: rect(0px, 60px, 120px, 0px);
+  background-color: #2980b9;
+}
+.radial-progressaverage .inset {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: #fbfbfb;
+  border-radius: 50%;
+  box-shadow: 0;
+}
+.radial-progressaverage .inset .percentage {
+  height: 20px;
+  width: 40px;
+  overflow: hidden;
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  line-height: 1;
+}
+.radial-progressaverage .inset .percentage .numbers {
+  margin-top: -20px;
+  transition: width 1s;
+}
+.radial-progressaverage .inset .percentage .numbers span {
+  width: 40px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+}
+.radial-progressaverage[data-progress="0"] .circle .mask.full,
+.radial-progressaverage[data-progress="0"] .circle .fill {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.radial-progressaverage[data-progress="0"] .circle .fill.fix {
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.radial-progressaverage[data-progress="0"] .inset .percentage .numbers {
+  width: 40px;
+  text-shadow: 0 0 2px #ff0000 !important;
+}
+.radial-progressaverage[data-progress="0"] .mask .fill {
+  background-color: #ff0000 !important;
+}
+.radial-progressaverage[data-progress="1"] .circle .mask.full,
+.radial-progressaverage[data-progress="1"] .circle .fill {
+  -webkit-transform: rotate(1.8deg);
+  -ms-transform: rotate(1.8deg);
+  transform: rotate(1.8deg);
+}
+.radial-progressaverage[data-progress="1"] .circle .fill.fix {
+  -webkit-transform: rotate(3.6deg);
+  -ms-transform: rotate(3.6deg);
+  transform: rotate(3.6deg);
+}
+.radial-progressaverage[data-progress="1"] .inset .percentage .numbers {
+  width: 80px;
+  text-shadow: 0 0 2px #ff0000 !important;
+}
+.radial-progressaverage[data-progress="1"] .mask .fill {
+  background-color: #ff0000 !important;
+}
+.radial-progressaverage[data-progress="2"] .circle .mask.full,
+.radial-progressaverage[data-progress="2"] .circle .fill {
+  -webkit-transform: rotate(3.6deg);
+  -ms-transform: rotate(3.6deg);
+  transform: rotate(3.6deg);
+}
+.radial-progressaverage[data-progress="2"] .circle .fill.fix {
+  -webkit-transform: rotate(7.2deg);
+  -ms-transform: rotate(7.2deg);
+  transform: rotate(7.2deg);
+}
+.radial-progressaverage[data-progress="2"] .inset .percentage .numbers {
+  width: 120px;
+  text-shadow: 0 0 2px #ff0500 !important;
+}
+.radial-progressaverage[data-progress="2"] .mask .fill {
+  background-color: #ff0500 !important;
+}
+.radial-progressaverage[data-progress="3"] .circle .mask.full,
+.radial-progressaverage[data-progress="3"] .circle .fill {
+  -webkit-transform: rotate(5.4deg);
+  -ms-transform: rotate(5.4deg);
+  transform: rotate(5.4deg);
+}
+.radial-progressaverage[data-progress="3"] .circle .fill.fix {
+  -webkit-transform: rotate(10.8deg);
+  -ms-transform: rotate(10.8deg);
+  transform: rotate(10.8deg);
+}
+.radial-progressaverage[data-progress="3"] .inset .percentage .numbers {
+  width: 160px;
+  text-shadow: 0 0 2px #ff0a00 !important;
+}
+.radial-progressaverage[data-progress="3"] .mask .fill {
+  background-color: #ff0a00 !important;
+}
+.radial-progressaverage[data-progress="4"] .circle .mask.full,
+.radial-progressaverage[data-progress="4"] .circle .fill {
+  -webkit-transform: rotate(7.2deg);
+  -ms-transform: rotate(7.2deg);
+  transform: rotate(7.2deg);
+}
+.radial-progressaverage[data-progress="4"] .circle .fill.fix {
+  -webkit-transform: rotate(14.4deg);
+  -ms-transform: rotate(14.4deg);
+  transform: rotate(14.4deg);
+}
+.radial-progressaverage[data-progress="4"] .inset .percentage .numbers {
+  width: 200px;
+  text-shadow: 0 0 2px #ff0f00 !important;
+}
+.radial-progressaverage[data-progress="4"] .mask .fill {
+  background-color: #ff0f00 !important;
+}
+.radial-progressaverage[data-progress="5"] .circle .mask.full,
+.radial-progressaverage[data-progress="5"] .circle .fill {
+  -webkit-transform: rotate(9deg);
+  -ms-transform: rotate(9deg);
+  transform: rotate(9deg);
+}
+.radial-progressaverage[data-progress="5"] .circle .fill.fix {
+  -webkit-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+.radial-progressaverage[data-progress="5"] .inset .percentage .numbers {
+  width: 240px;
+  text-shadow: 0 0 2px #ff1400 !important;
+}
+.radial-progressaverage[data-progress="5"] .mask .fill {
+  background-color: #ff1400 !important;
+}
+.radial-progressaverage[data-progress="6"] .circle .mask.full,
+.radial-progressaverage[data-progress="6"] .circle .fill {
+  -webkit-transform: rotate(10.8deg);
+  -ms-transform: rotate(10.8deg);
+  transform: rotate(10.8deg);
+}
+.radial-progressaverage[data-progress="6"] .circle .fill.fix {
+  -webkit-transform: rotate(21.6deg);
+  -ms-transform: rotate(21.6deg);
+  transform: rotate(21.6deg);
+}
+.radial-progressaverage[data-progress="6"] .inset .percentage .numbers {
+  width: 280px;
+  text-shadow: 0 0 2px #ff1900 !important;
+}
+.radial-progressaverage[data-progress="6"] .mask .fill {
+  background-color: #ff1900 !important;
+}
+.radial-progressaverage[data-progress="7"] .circle .mask.full,
+.radial-progressaverage[data-progress="7"] .circle .fill {
+  -webkit-transform: rotate(12.6deg);
+  -ms-transform: rotate(12.6deg);
+  transform: rotate(12.6deg);
+}
+.radial-progressaverage[data-progress="7"] .circle .fill.fix {
+  -webkit-transform: rotate(25.2deg);
+  -ms-transform: rotate(25.2deg);
+  transform: rotate(25.2deg);
+}
+.radial-progressaverage[data-progress="7"] .inset .percentage .numbers {
+  width: 320px;
+  text-shadow: 0 0 2px #ff1e00 !important;
+}
+.radial-progressaverage[data-progress="7"] .mask .fill {
+  background-color: #ff1e00 !important;
+}
+.radial-progressaverage[data-progress="8"] .circle .mask.full,
+.radial-progressaverage[data-progress="8"] .circle .fill {
+  -webkit-transform: rotate(14.4deg);
+  -ms-transform: rotate(14.4deg);
+  transform: rotate(14.4deg);
+}
+.radial-progressaverage[data-progress="8"] .circle .fill.fix {
+  -webkit-transform: rotate(28.8deg);
+  -ms-transform: rotate(28.8deg);
+  transform: rotate(28.8deg);
+}
+.radial-progressaverage[data-progress="8"] .inset .percentage .numbers {
+  width: 360px;
+  text-shadow: 0 0 2px #ff2300 !important;
+}
+.radial-progressaverage[data-progress="8"] .mask .fill {
+  background-color: #ff2300 !important;
+}
+.radial-progressaverage[data-progress="9"] .circle .mask.full,
+.radial-progressaverage[data-progress="9"] .circle .fill {
+  -webkit-transform: rotate(16.2deg);
+  -ms-transform: rotate(16.2deg);
+  transform: rotate(16.2deg);
+}
+.radial-progressaverage[data-progress="9"] .circle .fill.fix {
+  -webkit-transform: rotate(32.4deg);
+  -ms-transform: rotate(32.4deg);
+  transform: rotate(32.4deg);
+}
+.radial-progressaverage[data-progress="9"] .inset .percentage .numbers {
+  width: 400px;
+  text-shadow: 0 0 2px #ff2800 !important;
+}
+.radial-progressaverage[data-progress="9"] .mask .fill {
+  background-color: #ff2800 !important;
+}
+.radial-progressaverage[data-progress="10"] .circle .mask.full,
+.radial-progressaverage[data-progress="10"] .circle .fill {
+  -webkit-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+.radial-progressaverage[data-progress="10"] .circle .fill.fix {
+  -webkit-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+.radial-progressaverage[data-progress="10"] .inset .percentage .numbers {
+  width: 440px;
+  text-shadow: 0 0 2px #ff2d00 !important;
+}
+.radial-progressaverage[data-progress="10"] .mask .fill {
+  background-color: #ff2d00 !important;
+}
+.radial-progressaverage[data-progress="11"] .circle .mask.full,
+.radial-progressaverage[data-progress="11"] .circle .fill {
+  -webkit-transform: rotate(19.8deg);
+  -ms-transform: rotate(19.8deg);
+  transform: rotate(19.8deg);
+}
+.radial-progressaverage[data-progress="11"] .circle .fill.fix {
+  -webkit-transform: rotate(39.6deg);
+  -ms-transform: rotate(39.6deg);
+  transform: rotate(39.6deg);
+}
+.radial-progressaverage[data-progress="11"] .inset .percentage .numbers {
+  width: 480px;
+  text-shadow: 0 0 2px #ff3200 !important;
+}
+.radial-progressaverage[data-progress="11"] .mask .fill {
+  background-color: #ff3200 !important;
+}
+.radial-progressaverage[data-progress="12"] .circle .mask.full,
+.radial-progressaverage[data-progress="12"] .circle .fill {
+  -webkit-transform: rotate(21.6deg);
+  -ms-transform: rotate(21.6deg);
+  transform: rotate(21.6deg);
+}
+.radial-progressaverage[data-progress="12"] .circle .fill.fix {
+  -webkit-transform: rotate(43.2deg);
+  -ms-transform: rotate(43.2deg);
+  transform: rotate(43.2deg);
+}
+.radial-progressaverage[data-progress="12"] .inset .percentage .numbers {
+  width: 520px;
+  text-shadow: 0 0 2px #ff3700 !important;
+}
+.radial-progressaverage[data-progress="12"] .mask .fill {
+  background-color: #ff3700 !important;
+}
+.radial-progressaverage[data-progress="13"] .circle .mask.full,
+.radial-progressaverage[data-progress="13"] .circle .fill {
+  -webkit-transform: rotate(23.4deg);
+  -ms-transform: rotate(23.4deg);
+  transform: rotate(23.4deg);
+}
+.radial-progressaverage[data-progress="13"] .circle .fill.fix {
+  -webkit-transform: rotate(46.8deg);
+  -ms-transform: rotate(46.8deg);
+  transform: rotate(46.8deg);
+}
+.radial-progressaverage[data-progress="13"] .inset .percentage .numbers {
+  width: 560px;
+  text-shadow: 0 0 2px #ff3c00 !important;
+}
+.radial-progressaverage[data-progress="13"] .mask .fill {
+  background-color: #ff3c00 !important;
+}
+.radial-progressaverage[data-progress="14"] .circle .mask.full,
+.radial-progressaverage[data-progress="14"] .circle .fill {
+  -webkit-transform: rotate(25.2deg);
+  -ms-transform: rotate(25.2deg);
+  transform: rotate(25.2deg);
+}
+.radial-progressaverage[data-progress="14"] .circle .fill.fix {
+  -webkit-transform: rotate(50.4deg);
+  -ms-transform: rotate(50.4deg);
+  transform: rotate(50.4deg);
+}
+.radial-progressaverage[data-progress="14"] .inset .percentage .numbers {
+  width: 600px;
+  text-shadow: 0 0 2px #ff4100 !important;
+}
+.radial-progressaverage[data-progress="14"] .mask .fill {
+  background-color: #ff4100 !important;
+}
+.radial-progressaverage[data-progress="15"] .circle .mask.full,
+.radial-progressaverage[data-progress="15"] .circle .fill {
+  -webkit-transform: rotate(27deg);
+  -ms-transform: rotate(27deg);
+  transform: rotate(27deg);
+}
+.radial-progressaverage[data-progress="15"] .circle .fill.fix {
+  -webkit-transform: rotate(54deg);
+  -ms-transform: rotate(54deg);
+  transform: rotate(54deg);
+}
+.radial-progressaverage[data-progress="15"] .inset .percentage .numbers {
+  width: 640px;
+  text-shadow: 0 0 2px #ff4600 !important;
+}
+.radial-progressaverage[data-progress="15"] .mask .fill {
+  background-color: #ff4600 !important;
+}
+.radial-progressaverage[data-progress="16"] .circle .mask.full,
+.radial-progressaverage[data-progress="16"] .circle .fill {
+  -webkit-transform: rotate(28.8deg);
+  -ms-transform: rotate(28.8deg);
+  transform: rotate(28.8deg);
+}
+.radial-progressaverage[data-progress="16"] .circle .fill.fix {
+  -webkit-transform: rotate(57.6deg);
+  -ms-transform: rotate(57.6deg);
+  transform: rotate(57.6deg);
+}
+.radial-progressaverage[data-progress="16"] .inset .percentage .numbers {
+  width: 680px;
+  text-shadow: 0 0 2px #ff4b00 !important;
+}
+.radial-progressaverage[data-progress="16"] .mask .fill {
+  background-color: #ff4b00 !important;
+}
+.radial-progressaverage[data-progress="17"] .circle .mask.full,
+.radial-progressaverage[data-progress="17"] .circle .fill {
+  -webkit-transform: rotate(30.6deg);
+  -ms-transform: rotate(30.6deg);
+  transform: rotate(30.6deg);
+}
+.radial-progressaverage[data-progress="17"] .circle .fill.fix {
+  -webkit-transform: rotate(61.2deg);
+  -ms-transform: rotate(61.2deg);
+  transform: rotate(61.2deg);
+}
+.radial-progressaverage[data-progress="17"] .inset .percentage .numbers {
+  width: 720px;
+  text-shadow: 0 0 2px #ff5000 !important;
+}
+.radial-progressaverage[data-progress="17"] .mask .fill {
+  background-color: #ff5000 !important;
+}
+.radial-progressaverage[data-progress="18"] .circle .mask.full,
+.radial-progressaverage[data-progress="18"] .circle .fill {
+  -webkit-transform: rotate(32.4deg);
+  -ms-transform: rotate(32.4deg);
+  transform: rotate(32.4deg);
+}
+.radial-progressaverage[data-progress="18"] .circle .fill.fix {
+  -webkit-transform: rotate(64.8deg);
+  -ms-transform: rotate(64.8deg);
+  transform: rotate(64.8deg);
+}
+.radial-progressaverage[data-progress="18"] .inset .percentage .numbers {
+  width: 760px;
+  text-shadow: 0 0 2px #ff5500 !important;
+}
+.radial-progressaverage[data-progress="18"] .mask .fill {
+  background-color: #ff5500 !important;
+}
+.radial-progressaverage[data-progress="19"] .circle .mask.full,
+.radial-progressaverage[data-progress="19"] .circle .fill {
+  -webkit-transform: rotate(34.2deg);
+  -ms-transform: rotate(34.2deg);
+  transform: rotate(34.2deg);
+}
+.radial-progressaverage[data-progress="19"] .circle .fill.fix {
+  -webkit-transform: rotate(68.4deg);
+  -ms-transform: rotate(68.4deg);
+  transform: rotate(68.4deg);
+}
+.radial-progressaverage[data-progress="19"] .inset .percentage .numbers {
+  width: 800px;
+  text-shadow: 0 0 2px #ff5a00 !important;
+}
+.radial-progressaverage[data-progress="19"] .mask .fill {
+  background-color: #ff5a00 !important;
+}
+.radial-progressaverage[data-progress="20"] .circle .mask.full,
+.radial-progressaverage[data-progress="20"] .circle .fill {
+  -webkit-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+.radial-progressaverage[data-progress="20"] .circle .fill.fix {
+  -webkit-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.radial-progressaverage[data-progress="20"] .inset .percentage .numbers {
+  width: 840px;
+  text-shadow: 0 0 2px #ff5f00 !important;
+}
+.radial-progressaverage[data-progress="20"] .mask .fill {
+  background-color: #ff5f00 !important;
+}
+.radial-progressaverage[data-progress="21"] .circle .mask.full,
+.radial-progressaverage[data-progress="21"] .circle .fill {
+  -webkit-transform: rotate(37.8deg);
+  -ms-transform: rotate(37.8deg);
+  transform: rotate(37.8deg);
+}
+.radial-progressaverage[data-progress="21"] .circle .fill.fix {
+  -webkit-transform: rotate(75.6deg);
+  -ms-transform: rotate(75.6deg);
+  transform: rotate(75.6deg);
+}
+.radial-progressaverage[data-progress="21"] .inset .percentage .numbers {
+  width: 880px;
+  text-shadow: 0 0 2px #ff6400 !important;
+}
+.radial-progressaverage[data-progress="21"] .mask .fill {
+  background-color: #ff6400 !important;
+}
+.radial-progressaverage[data-progress="22"] .circle .mask.full,
+.radial-progressaverage[data-progress="22"] .circle .fill {
+  -webkit-transform: rotate(39.6deg);
+  -ms-transform: rotate(39.6deg);
+  transform: rotate(39.6deg);
+}
+.radial-progressaverage[data-progress="22"] .circle .fill.fix {
+  -webkit-transform: rotate(79.2deg);
+  -ms-transform: rotate(79.2deg);
+  transform: rotate(79.2deg);
+}
+.radial-progressaverage[data-progress="22"] .inset .percentage .numbers {
+  width: 920px;
+  text-shadow: 0 0 2px #ff6900 !important;
+}
+.radial-progressaverage[data-progress="22"] .mask .fill {
+  background-color: #ff6900 !important;
+}
+.radial-progressaverage[data-progress="23"] .circle .mask.full,
+.radial-progressaverage[data-progress="23"] .circle .fill {
+  -webkit-transform: rotate(41.4deg);
+  -ms-transform: rotate(41.4deg);
+  transform: rotate(41.4deg);
+}
+.radial-progressaverage[data-progress="23"] .circle .fill.fix {
+  -webkit-transform: rotate(82.8deg);
+  -ms-transform: rotate(82.8deg);
+  transform: rotate(82.8deg);
+}
+.radial-progressaverage[data-progress="23"] .inset .percentage .numbers {
+  width: 960px;
+  text-shadow: 0 0 2px #ff6e00 !important;
+}
+.radial-progressaverage[data-progress="23"] .mask .fill {
+  background-color: #ff6e00 !important;
+}
+.radial-progressaverage[data-progress="24"] .circle .mask.full,
+.radial-progressaverage[data-progress="24"] .circle .fill {
+  -webkit-transform: rotate(43.2deg);
+  -ms-transform: rotate(43.2deg);
+  transform: rotate(43.2deg);
+}
+.radial-progressaverage[data-progress="24"] .circle .fill.fix {
+  -webkit-transform: rotate(86.4deg);
+  -ms-transform: rotate(86.4deg);
+  transform: rotate(86.4deg);
+}
+.radial-progressaverage[data-progress="24"] .inset .percentage .numbers {
+  width: 1000px;
+  text-shadow: 0 0 2px #ff7300 !important;
+}
+.radial-progressaverage[data-progress="24"] .mask .fill {
+  background-color: #ff7300 !important;
+}
+.radial-progressaverage[data-progress="25"] .circle .mask.full,
+.radial-progressaverage[data-progress="25"] .circle .fill {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.radial-progressaverage[data-progress="25"] .circle .fill.fix {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.radial-progressaverage[data-progress="25"] .inset .percentage .numbers {
+  width: 1040px;
+  text-shadow: 0 0 2px #ff7800 !important;
+}
+.radial-progressaverage[data-progress="25"] .mask .fill {
+  background-color: #ff7800 !important;
+}
+.radial-progressaverage[data-progress="26"] .circle .mask.full,
+.radial-progressaverage[data-progress="26"] .circle .fill {
+  -webkit-transform: rotate(46.8deg);
+  -ms-transform: rotate(46.8deg);
+  transform: rotate(46.8deg);
+}
+.radial-progressaverage[data-progress="26"] .circle .fill.fix {
+  -webkit-transform: rotate(93.6deg);
+  -ms-transform: rotate(93.6deg);
+  transform: rotate(93.6deg);
+}
+.radial-progressaverage[data-progress="26"] .inset .percentage .numbers {
+  width: 1080px;
+  text-shadow: 0 0 2px #ff7d00 !important;
+}
+.radial-progressaverage[data-progress="26"] .mask .fill {
+  background-color: #ff7d00 !important;
+}
+.radial-progressaverage[data-progress="27"] .circle .mask.full,
+.radial-progressaverage[data-progress="27"] .circle .fill {
+  -webkit-transform: rotate(48.6deg);
+  -ms-transform: rotate(48.6deg);
+  transform: rotate(48.6deg);
+}
+.radial-progressaverage[data-progress="27"] .circle .fill.fix {
+  -webkit-transform: rotate(97.2deg);
+  -ms-transform: rotate(97.2deg);
+  transform: rotate(97.2deg);
+}
+.radial-progressaverage[data-progress="27"] .inset .percentage .numbers {
+  width: 1120px;
+  text-shadow: 0 0 2px #ff8200 !important;
+}
+.radial-progressaverage[data-progress="27"] .mask .fill {
+  background-color: #ff8200 !important;
+}
+.radial-progressaverage[data-progress="28"] .circle .mask.full,
+.radial-progressaverage[data-progress="28"] .circle .fill {
+  -webkit-transform: rotate(50.4deg);
+  -ms-transform: rotate(50.4deg);
+  transform: rotate(50.4deg);
+}
+.radial-progressaverage[data-progress="28"] .circle .fill.fix {
+  -webkit-transform: rotate(100.8deg);
+  -ms-transform: rotate(100.8deg);
+  transform: rotate(100.8deg);
+}
+.radial-progressaverage[data-progress="28"] .inset .percentage .numbers {
+  width: 1160px;
+  text-shadow: 0 0 2px #ff8700 !important;
+}
+.radial-progressaverage[data-progress="28"] .mask .fill {
+  background-color: #ff8700 !important;
+}
+.radial-progressaverage[data-progress="29"] .circle .mask.full,
+.radial-progressaverage[data-progress="29"] .circle .fill {
+  -webkit-transform: rotate(52.2deg);
+  -ms-transform: rotate(52.2deg);
+  transform: rotate(52.2deg);
+}
+.radial-progressaverage[data-progress="29"] .circle .fill.fix {
+  -webkit-transform: rotate(104.4deg);
+  -ms-transform: rotate(104.4deg);
+  transform: rotate(104.4deg);
+}
+.radial-progressaverage[data-progress="29"] .inset .percentage .numbers {
+  width: 1200px;
+  text-shadow: 0 0 2px #ff8c00 !important;
+}
+.radial-progressaverage[data-progress="29"] .mask .fill {
+  background-color: #ff8c00 !important;
+}
+.radial-progressaverage[data-progress="30"] .circle .mask.full,
+.radial-progressaverage[data-progress="30"] .circle .fill {
+  -webkit-transform: rotate(54deg);
+  -ms-transform: rotate(54deg);
+  transform: rotate(54deg);
+}
+.radial-progressaverage[data-progress="30"] .circle .fill.fix {
+  -webkit-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+.radial-progressaverage[data-progress="30"] .inset .percentage .numbers {
+  width: 1240px;
+  text-shadow: 0 0 2px #ff9100 !important;
+}
+.radial-progressaverage[data-progress="30"] .mask .fill {
+  background-color: #ff9100 !important;
+}
+.radial-progressaverage[data-progress="31"] .circle .mask.full,
+.radial-progressaverage[data-progress="31"] .circle .fill {
+  -webkit-transform: rotate(55.8deg);
+  -ms-transform: rotate(55.8deg);
+  transform: rotate(55.8deg);
+}
+.radial-progressaverage[data-progress="31"] .circle .fill.fix {
+  -webkit-transform: rotate(111.6deg);
+  -ms-transform: rotate(111.6deg);
+  transform: rotate(111.6deg);
+}
+.radial-progressaverage[data-progress="31"] .inset .percentage .numbers {
+  width: 1280px;
+  text-shadow: 0 0 2px #ff9600 !important;
+}
+.radial-progressaverage[data-progress="31"] .mask .fill {
+  background-color: #ff9600 !important;
+}
+.radial-progressaverage[data-progress="32"] .circle .mask.full,
+.radial-progressaverage[data-progress="32"] .circle .fill {
+  -webkit-transform: rotate(57.6deg);
+  -ms-transform: rotate(57.6deg);
+  transform: rotate(57.6deg);
+}
+.radial-progressaverage[data-progress="32"] .circle .fill.fix {
+  -webkit-transform: rotate(115.2deg);
+  -ms-transform: rotate(115.2deg);
+  transform: rotate(115.2deg);
+}
+.radial-progressaverage[data-progress="32"] .inset .percentage .numbers {
+  width: 1320px;
+  text-shadow: 0 0 2px #ff9b00 !important;
+}
+.radial-progressaverage[data-progress="32"] .mask .fill {
+  background-color: #ff9b00 !important;
+}
+.radial-progressaverage[data-progress="33"] .circle .mask.full,
+.radial-progressaverage[data-progress="33"] .circle .fill {
+  -webkit-transform: rotate(59.4deg);
+  -ms-transform: rotate(59.4deg);
+  transform: rotate(59.4deg);
+}
+.radial-progressaverage[data-progress="33"] .circle .fill.fix {
+  -webkit-transform: rotate(118.8deg);
+  -ms-transform: rotate(118.8deg);
+  transform: rotate(118.8deg);
+}
+.radial-progressaverage[data-progress="33"] .inset .percentage .numbers {
+  width: 1360px;
+  text-shadow: 0 0 2px #ffa000 !important;
+}
+.radial-progressaverage[data-progress="33"] .mask .fill {
+  background-color: #ffa000 !important;
+}
+.radial-progressaverage[data-progress="34"] .circle .mask.full,
+.radial-progressaverage[data-progress="34"] .circle .fill {
+  -webkit-transform: rotate(61.2deg);
+  -ms-transform: rotate(61.2deg);
+  transform: rotate(61.2deg);
+}
+.radial-progressaverage[data-progress="34"] .circle .fill.fix {
+  -webkit-transform: rotate(122.4deg);
+  -ms-transform: rotate(122.4deg);
+  transform: rotate(122.4deg);
+}
+.radial-progressaverage[data-progress="34"] .inset .percentage .numbers {
+  width: 1400px;
+  text-shadow: 0 0 2px #ffa500 !important;
+}
+.radial-progressaverage[data-progress="34"] .mask .fill {
+  background-color: #ffa500 !important;
+}
+.radial-progressaverage[data-progress="35"] .circle .mask.full,
+.radial-progressaverage[data-progress="35"] .circle .fill {
+  -webkit-transform: rotate(63deg);
+  -ms-transform: rotate(63deg);
+  transform: rotate(63deg);
+}
+.radial-progressaverage[data-progress="35"] .circle .fill.fix {
+  -webkit-transform: rotate(126deg);
+  -ms-transform: rotate(126deg);
+  transform: rotate(126deg);
+}
+.radial-progressaverage[data-progress="35"] .inset .percentage .numbers {
+  width: 1440px;
+  text-shadow: 0 0 2px #ffaa00 !important;
+}
+.radial-progressaverage[data-progress="35"] .mask .fill {
+  background-color: #ffaa00 !important;
+}
+.radial-progressaverage[data-progress="36"] .circle .mask.full,
+.radial-progressaverage[data-progress="36"] .circle .fill {
+  -webkit-transform: rotate(64.8deg);
+  -ms-transform: rotate(64.8deg);
+  transform: rotate(64.8deg);
+}
+.radial-progressaverage[data-progress="36"] .circle .fill.fix {
+  -webkit-transform: rotate(129.6deg);
+  -ms-transform: rotate(129.6deg);
+  transform: rotate(129.6deg);
+}
+.radial-progressaverage[data-progress="36"] .inset .percentage .numbers {
+  width: 1480px;
+  text-shadow: 0 0 2px #ffaf00 !important;
+}
+.radial-progressaverage[data-progress="36"] .mask .fill {
+  background-color: #ffaf00 !important;
+}
+.radial-progressaverage[data-progress="37"] .circle .mask.full,
+.radial-progressaverage[data-progress="37"] .circle .fill {
+  -webkit-transform: rotate(66.6deg);
+  -ms-transform: rotate(66.6deg);
+  transform: rotate(66.6deg);
+}
+.radial-progressaverage[data-progress="37"] .circle .fill.fix {
+  -webkit-transform: rotate(133.2deg);
+  -ms-transform: rotate(133.2deg);
+  transform: rotate(133.2deg);
+}
+.radial-progressaverage[data-progress="37"] .inset .percentage .numbers {
+  width: 1520px;
+  text-shadow: 0 0 2px #ffb400 !important;
+}
+.radial-progressaverage[data-progress="37"] .mask .fill {
+  background-color: #ffb400 !important;
+}
+.radial-progressaverage[data-progress="38"] .circle .mask.full,
+.radial-progressaverage[data-progress="38"] .circle .fill {
+  -webkit-transform: rotate(68.4deg);
+  -ms-transform: rotate(68.4deg);
+  transform: rotate(68.4deg);
+}
+.radial-progressaverage[data-progress="38"] .circle .fill.fix {
+  -webkit-transform: rotate(136.8deg);
+  -ms-transform: rotate(136.8deg);
+  transform: rotate(136.8deg);
+}
+.radial-progressaverage[data-progress="38"] .inset .percentage .numbers {
+  width: 1560px;
+  text-shadow: 0 0 2px #ffb900 !important;
+}
+.radial-progressaverage[data-progress="38"] .mask .fill {
+  background-color: #ffb900 !important;
+}
+.radial-progressaverage[data-progress="39"] .circle .mask.full,
+.radial-progressaverage[data-progress="39"] .circle .fill {
+  -webkit-transform: rotate(70.2deg);
+  -ms-transform: rotate(70.2deg);
+  transform: rotate(70.2deg);
+}
+.radial-progressaverage[data-progress="39"] .circle .fill.fix {
+  -webkit-transform: rotate(140.4deg);
+  -ms-transform: rotate(140.4deg);
+  transform: rotate(140.4deg);
+}
+.radial-progressaverage[data-progress="39"] .inset .percentage .numbers {
+  width: 1600px;
+  text-shadow: 0 0 2px #ffbe00 !important;
+}
+.radial-progressaverage[data-progress="39"] .mask .fill {
+  background-color: #ffbe00 !important;
+}
+.radial-progressaverage[data-progress="40"] .circle .mask.full,
+.radial-progressaverage[data-progress="40"] .circle .fill {
+  -webkit-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+.radial-progressaverage[data-progress="40"] .circle .fill.fix {
+  -webkit-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.radial-progressaverage[data-progress="40"] .inset .percentage .numbers {
+  width: 1640px;
+  text-shadow: 0 0 2px #ffc300 !important;
+}
+.radial-progressaverage[data-progress="40"] .mask .fill {
+  background-color: #ffc300 !important;
+}
+.radial-progressaverage[data-progress="41"] .circle .mask.full,
+.radial-progressaverage[data-progress="41"] .circle .fill {
+  -webkit-transform: rotate(73.8deg);
+  -ms-transform: rotate(73.8deg);
+  transform: rotate(73.8deg);
+}
+.radial-progressaverage[data-progress="41"] .circle .fill.fix {
+  -webkit-transform: rotate(147.6deg);
+  -ms-transform: rotate(147.6deg);
+  transform: rotate(147.6deg);
+}
+.radial-progressaverage[data-progress="41"] .inset .percentage .numbers {
+  width: 1680px;
+  text-shadow: 0 0 2px #ffc800 !important;
+}
+.radial-progressaverage[data-progress="41"] .mask .fill {
+  background-color: #ffc800 !important;
+}
+.radial-progressaverage[data-progress="42"] .circle .mask.full,
+.radial-progressaverage[data-progress="42"] .circle .fill {
+  -webkit-transform: rotate(75.6deg);
+  -ms-transform: rotate(75.6deg);
+  transform: rotate(75.6deg);
+}
+.radial-progressaverage[data-progress="42"] .circle .fill.fix {
+  -webkit-transform: rotate(151.2deg);
+  -ms-transform: rotate(151.2deg);
+  transform: rotate(151.2deg);
+}
+.radial-progressaverage[data-progress="42"] .inset .percentage .numbers {
+  width: 1720px;
+  text-shadow: 0 0 2px #ffcd00 !important;
+}
+.radial-progressaverage[data-progress="42"] .mask .fill {
+  background-color: #ffcd00 !important;
+}
+.radial-progressaverage[data-progress="43"] .circle .mask.full,
+.radial-progressaverage[data-progress="43"] .circle .fill {
+  -webkit-transform: rotate(77.4deg);
+  -ms-transform: rotate(77.4deg);
+  transform: rotate(77.4deg);
+}
+.radial-progressaverage[data-progress="43"] .circle .fill.fix {
+  -webkit-transform: rotate(154.8deg);
+  -ms-transform: rotate(154.8deg);
+  transform: rotate(154.8deg);
+}
+.radial-progressaverage[data-progress="43"] .inset .percentage .numbers {
+  width: 1760px;
+  text-shadow: 0 0 2px #ffd200 !important;
+}
+.radial-progressaverage[data-progress="43"] .mask .fill {
+  background-color: #ffd200 !important;
+}
+.radial-progressaverage[data-progress="44"] .circle .mask.full,
+.radial-progressaverage[data-progress="44"] .circle .fill {
+  -webkit-transform: rotate(79.2deg);
+  -ms-transform: rotate(79.2deg);
+  transform: rotate(79.2deg);
+}
+.radial-progressaverage[data-progress="44"] .circle .fill.fix {
+  -webkit-transform: rotate(158.4deg);
+  -ms-transform: rotate(158.4deg);
+  transform: rotate(158.4deg);
+}
+.radial-progressaverage[data-progress="44"] .inset .percentage .numbers {
+  width: 1800px;
+  text-shadow: 0 0 2px #ffd700 !important;
+}
+.radial-progressaverage[data-progress="44"] .mask .fill {
+  background-color: #ffd700 !important;
+}
+.radial-progressaverage[data-progress="45"] .circle .mask.full,
+.radial-progressaverage[data-progress="45"] .circle .fill {
+  -webkit-transform: rotate(81deg);
+  -ms-transform: rotate(81deg);
+  transform: rotate(81deg);
+}
+.radial-progressaverage[data-progress="45"] .circle .fill.fix {
+  -webkit-transform: rotate(162deg);
+  -ms-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+.radial-progressaverage[data-progress="45"] .inset .percentage .numbers {
+  width: 1840px;
+  text-shadow: 0 0 2px #ffdc00 !important;
+}
+.radial-progressaverage[data-progress="45"] .mask .fill {
+  background-color: #ffdc00 !important;
+}
+.radial-progressaverage[data-progress="46"] .circle .mask.full,
+.radial-progressaverage[data-progress="46"] .circle .fill {
+  -webkit-transform: rotate(82.8deg);
+  -ms-transform: rotate(82.8deg);
+  transform: rotate(82.8deg);
+}
+.radial-progressaverage[data-progress="46"] .circle .fill.fix {
+  -webkit-transform: rotate(165.6deg);
+  -ms-transform: rotate(165.6deg);
+  transform: rotate(165.6deg);
+}
+.radial-progressaverage[data-progress="46"] .inset .percentage .numbers {
+  width: 1880px;
+  text-shadow: 0 0 2px #ffe100 !important;
+}
+.radial-progressaverage[data-progress="46"] .mask .fill {
+  background-color: #ffe100 !important;
+}
+.radial-progressaverage[data-progress="47"] .circle .mask.full,
+.radial-progressaverage[data-progress="47"] .circle .fill {
+  -webkit-transform: rotate(84.6deg);
+  -ms-transform: rotate(84.6deg);
+  transform: rotate(84.6deg);
+}
+.radial-progressaverage[data-progress="47"] .circle .fill.fix {
+  -webkit-transform: rotate(169.2deg);
+  -ms-transform: rotate(169.2deg);
+  transform: rotate(169.2deg);
+}
+.radial-progressaverage[data-progress="47"] .inset .percentage .numbers {
+  width: 1920px;
+  text-shadow: 0 0 2px #ffe600 !important;
+}
+.radial-progressaverage[data-progress="47"] .mask .fill {
+  background-color: #ffe600 !important;
+}
+.radial-progressaverage[data-progress="48"] .circle .mask.full,
+.radial-progressaverage[data-progress="48"] .circle .fill {
+  -webkit-transform: rotate(86.4deg);
+  -ms-transform: rotate(86.4deg);
+  transform: rotate(86.4deg);
+}
+.radial-progressaverage[data-progress="48"] .circle .fill.fix {
+  -webkit-transform: rotate(172.8deg);
+  -ms-transform: rotate(172.8deg);
+  transform: rotate(172.8deg);
+}
+.radial-progressaverage[data-progress="48"] .inset .percentage .numbers {
+  width: 1960px;
+  text-shadow: 0 0 2px #ffeb00 !important;
+}
+.radial-progressaverage[data-progress="48"] .mask .fill {
+  background-color: #ffeb00 !important;
+}
+.radial-progressaverage[data-progress="49"] .circle .mask.full,
+.radial-progressaverage[data-progress="49"] .circle .fill {
+  -webkit-transform: rotate(88.2deg);
+  -ms-transform: rotate(88.2deg);
+  transform: rotate(88.2deg);
+}
+.radial-progressaverage[data-progress="49"] .circle .fill.fix {
+  -webkit-transform: rotate(176.4deg);
+  -ms-transform: rotate(176.4deg);
+  transform: rotate(176.4deg);
+}
+.radial-progressaverage[data-progress="49"] .inset .percentage .numbers {
+  width: 2000px;
+  text-shadow: 0 0 2px #fff000 !important;
+}
+.radial-progressaverage[data-progress="49"] .mask .fill {
+  background-color: #fff000 !important;
+}
+.radial-progressaverage[data-progress="50"] .circle .mask.full,
+.radial-progressaverage[data-progress="50"] .circle .fill {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.radial-progressaverage[data-progress="50"] .circle .fill.fix {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.radial-progressaverage[data-progress="50"] .inset .percentage .numbers {
+  width: 2040px;
+  text-shadow: 0 0 2px #fff500 !important;
+}
+.radial-progressaverage[data-progress="50"] .mask .fill {
+  background-color: #fff500 !important;
+}
+.radial-progressaverage[data-progress="51"] .circle .mask.full,
+.radial-progressaverage[data-progress="51"] .circle .fill {
+  -webkit-transform: rotate(91.8deg);
+  -ms-transform: rotate(91.8deg);
+  transform: rotate(91.8deg);
+}
+.radial-progressaverage[data-progress="51"] .circle .fill.fix {
+  -webkit-transform: rotate(183.6deg);
+  -ms-transform: rotate(183.6deg);
+  transform: rotate(183.6deg);
+}
+.radial-progressaverage[data-progress="51"] .inset .percentage .numbers {
+  width: 2080px;
+  text-shadow: 0 0 2px #fafa00 !important;
+}
+.radial-progressaverage[data-progress="51"] .mask .fill {
+  background-color: #fafa00 !important;
+}
+.radial-progressaverage[data-progress="52"] .circle .mask.full,
+.radial-progressaverage[data-progress="52"] .circle .fill {
+  -webkit-transform: rotate(93.6deg);
+  -ms-transform: rotate(93.6deg);
+  transform: rotate(93.6deg);
+}
+.radial-progressaverage[data-progress="52"] .circle .fill.fix {
+  -webkit-transform: rotate(187.2deg);
+  -ms-transform: rotate(187.2deg);
+  transform: rotate(187.2deg);
+}
+.radial-progressaverage[data-progress="52"] .inset .percentage .numbers {
+  width: 2120px;
+  text-shadow: 0 0 2px #f5ff00 !important;
+}
+.radial-progressaverage[data-progress="52"] .mask .fill {
+  background-color: #f5ff00 !important;
+}
+.radial-progressaverage[data-progress="53"] .circle .mask.full,
+.radial-progressaverage[data-progress="53"] .circle .fill {
+  -webkit-transform: rotate(95.4deg);
+  -ms-transform: rotate(95.4deg);
+  transform: rotate(95.4deg);
+}
+.radial-progressaverage[data-progress="53"] .circle .fill.fix {
+  -webkit-transform: rotate(190.8deg);
+  -ms-transform: rotate(190.8deg);
+  transform: rotate(190.8deg);
+}
+.radial-progressaverage[data-progress="53"] .inset .percentage .numbers {
+  width: 2160px;
+  text-shadow: 0 0 2px #f0ff00 !important;
+}
+.radial-progressaverage[data-progress="53"] .mask .fill {
+  background-color: #f0ff00 !important;
+}
+.radial-progressaverage[data-progress="54"] .circle .mask.full,
+.radial-progressaverage[data-progress="54"] .circle .fill {
+  -webkit-transform: rotate(97.2deg);
+  -ms-transform: rotate(97.2deg);
+  transform: rotate(97.2deg);
+}
+.radial-progressaverage[data-progress="54"] .circle .fill.fix {
+  -webkit-transform: rotate(194.4deg);
+  -ms-transform: rotate(194.4deg);
+  transform: rotate(194.4deg);
+}
+.radial-progressaverage[data-progress="54"] .inset .percentage .numbers {
+  width: 2200px;
+  text-shadow: 0 0 2px #ebff00 !important;
+}
+.radial-progressaverage[data-progress="54"] .mask .fill {
+  background-color: #ebff00 !important;
+}
+.radial-progressaverage[data-progress="55"] .circle .mask.full,
+.radial-progressaverage[data-progress="55"] .circle .fill {
+  -webkit-transform: rotate(99deg);
+  -ms-transform: rotate(99deg);
+  transform: rotate(99deg);
+}
+.radial-progressaverage[data-progress="55"] .circle .fill.fix {
+  -webkit-transform: rotate(198deg);
+  -ms-transform: rotate(198deg);
+  transform: rotate(198deg);
+}
+.radial-progressaverage[data-progress="55"] .inset .percentage .numbers {
+  width: 2240px;
+  text-shadow: 0 0 2px #e6ff00 !important;
+}
+.radial-progressaverage[data-progress="55"] .mask .fill {
+  background-color: #e6ff00 !important;
+}
+.radial-progressaverage[data-progress="56"] .circle .mask.full,
+.radial-progressaverage[data-progress="56"] .circle .fill {
+  -webkit-transform: rotate(100.8deg);
+  -ms-transform: rotate(100.8deg);
+  transform: rotate(100.8deg);
+}
+.radial-progressaverage[data-progress="56"] .circle .fill.fix {
+  -webkit-transform: rotate(201.6deg);
+  -ms-transform: rotate(201.6deg);
+  transform: rotate(201.6deg);
+}
+.radial-progressaverage[data-progress="56"] .inset .percentage .numbers {
+  width: 2280px;
+  text-shadow: 0 0 2px #e1ff00 !important;
+}
+.radial-progressaverage[data-progress="56"] .mask .fill {
+  background-color: #e1ff00 !important;
+}
+.radial-progressaverage[data-progress="57"] .circle .mask.full,
+.radial-progressaverage[data-progress="57"] .circle .fill {
+  -webkit-transform: rotate(102.6deg);
+  -ms-transform: rotate(102.6deg);
+  transform: rotate(102.6deg);
+}
+.radial-progressaverage[data-progress="57"] .circle .fill.fix {
+  -webkit-transform: rotate(205.2deg);
+  -ms-transform: rotate(205.2deg);
+  transform: rotate(205.2deg);
+}
+.radial-progressaverage[data-progress="57"] .inset .percentage .numbers {
+  width: 2320px;
+  text-shadow: 0 0 2px #dcff00 !important;
+}
+.radial-progressaverage[data-progress="57"] .mask .fill {
+  background-color: #dcff00 !important;
+}
+.radial-progressaverage[data-progress="58"] .circle .mask.full,
+.radial-progressaverage[data-progress="58"] .circle .fill {
+  -webkit-transform: rotate(104.4deg);
+  -ms-transform: rotate(104.4deg);
+  transform: rotate(104.4deg);
+}
+.radial-progressaverage[data-progress="58"] .circle .fill.fix {
+  -webkit-transform: rotate(208.8deg);
+  -ms-transform: rotate(208.8deg);
+  transform: rotate(208.8deg);
+}
+.radial-progressaverage[data-progress="58"] .inset .percentage .numbers {
+  width: 2360px;
+  text-shadow: 0 0 2px #d7ff00 !important;
+}
+.radial-progressaverage[data-progress="58"] .mask .fill {
+  background-color: #d7ff00 !important;
+}
+.radial-progressaverage[data-progress="59"] .circle .mask.full,
+.radial-progressaverage[data-progress="59"] .circle .fill {
+  -webkit-transform: rotate(106.2deg);
+  -ms-transform: rotate(106.2deg);
+  transform: rotate(106.2deg);
+}
+.radial-progressaverage[data-progress="59"] .circle .fill.fix {
+  -webkit-transform: rotate(212.4deg);
+  -ms-transform: rotate(212.4deg);
+  transform: rotate(212.4deg);
+}
+.radial-progressaverage[data-progress="59"] .inset .percentage .numbers {
+  width: 2400px;
+  text-shadow: 0 0 2px #d2ff00 !important;
+}
+.radial-progressaverage[data-progress="59"] .mask .fill {
+  background-color: #d2ff00 !important;
+}
+.radial-progressaverage[data-progress="60"] .circle .mask.full,
+.radial-progressaverage[data-progress="60"] .circle .fill {
+  -webkit-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+.radial-progressaverage[data-progress="60"] .circle .fill.fix {
+  -webkit-transform: rotate(216deg);
+  -ms-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+.radial-progressaverage[data-progress="60"] .inset .percentage .numbers {
+  width: 2440px;
+  text-shadow: 0 0 2px #cdff00 !important;
+}
+.radial-progressaverage[data-progress="60"] .mask .fill {
+  background-color: #cdff00 !important;
+}
+.radial-progressaverage[data-progress="61"] .circle .mask.full,
+.radial-progressaverage[data-progress="61"] .circle .fill {
+  -webkit-transform: rotate(109.8deg);
+  -ms-transform: rotate(109.8deg);
+  transform: rotate(109.8deg);
+}
+.radial-progressaverage[data-progress="61"] .circle .fill.fix {
+  -webkit-transform: rotate(219.6deg);
+  -ms-transform: rotate(219.6deg);
+  transform: rotate(219.6deg);
+}
+.radial-progressaverage[data-progress="61"] .inset .percentage .numbers {
+  width: 2480px;
+  text-shadow: 0 0 2px #c8ff00 !important;
+}
+.radial-progressaverage[data-progress="61"] .mask .fill {
+  background-color: #c8ff00 !important;
+}
+.radial-progressaverage[data-progress="62"] .circle .mask.full,
+.radial-progressaverage[data-progress="62"] .circle .fill {
+  -webkit-transform: rotate(111.6deg);
+  -ms-transform: rotate(111.6deg);
+  transform: rotate(111.6deg);
+}
+.radial-progressaverage[data-progress="62"] .circle .fill.fix {
+  -webkit-transform: rotate(223.2deg);
+  -ms-transform: rotate(223.2deg);
+  transform: rotate(223.2deg);
+}
+.radial-progressaverage[data-progress="62"] .inset .percentage .numbers {
+  width: 2520px;
+  text-shadow: 0 0 2px #c3ff00 !important;
+}
+.radial-progressaverage[data-progress="62"] .mask .fill {
+  background-color: #c3ff00 !important;
+}
+.radial-progressaverage[data-progress="63"] .circle .mask.full,
+.radial-progressaverage[data-progress="63"] .circle .fill {
+  -webkit-transform: rotate(113.4deg);
+  -ms-transform: rotate(113.4deg);
+  transform: rotate(113.4deg);
+}
+.radial-progressaverage[data-progress="63"] .circle .fill.fix {
+  -webkit-transform: rotate(226.8deg);
+  -ms-transform: rotate(226.8deg);
+  transform: rotate(226.8deg);
+}
+.radial-progressaverage[data-progress="63"] .inset .percentage .numbers {
+  width: 2560px;
+  text-shadow: 0 0 2px #beff00 !important;
+}
+.radial-progressaverage[data-progress="63"] .mask .fill {
+  background-color: #beff00 !important;
+}
+.radial-progressaverage[data-progress="64"] .circle .mask.full,
+.radial-progressaverage[data-progress="64"] .circle .fill {
+  -webkit-transform: rotate(115.2deg);
+  -ms-transform: rotate(115.2deg);
+  transform: rotate(115.2deg);
+}
+.radial-progressaverage[data-progress="64"] .circle .fill.fix {
+  -webkit-transform: rotate(230.4deg);
+  -ms-transform: rotate(230.4deg);
+  transform: rotate(230.4deg);
+}
+.radial-progressaverage[data-progress="64"] .inset .percentage .numbers {
+  width: 2600px;
+  text-shadow: 0 0 2px #b9ff00 !important;
+}
+.radial-progressaverage[data-progress="64"] .mask .fill {
+  background-color: #b9ff00 !important;
+}
+.radial-progressaverage[data-progress="65"] .circle .mask.full,
+.radial-progressaverage[data-progress="65"] .circle .fill {
+  -webkit-transform: rotate(117deg);
+  -ms-transform: rotate(117deg);
+  transform: rotate(117deg);
+}
+.radial-progressaverage[data-progress="65"] .circle .fill.fix {
+  -webkit-transform: rotate(234deg);
+  -ms-transform: rotate(234deg);
+  transform: rotate(234deg);
+}
+.radial-progressaverage[data-progress="65"] .inset .percentage .numbers {
+  width: 2640px;
+  text-shadow: 0 0 2px #b4ff00 !important;
+}
+.radial-progressaverage[data-progress="65"] .mask .fill {
+  background-color: #b4ff00 !important;
+}
+.radial-progressaverage[data-progress="66"] .circle .mask.full,
+.radial-progressaverage[data-progress="66"] .circle .fill {
+  -webkit-transform: rotate(118.8deg);
+  -ms-transform: rotate(118.8deg);
+  transform: rotate(118.8deg);
+}
+.radial-progressaverage[data-progress="66"] .circle .fill.fix {
+  -webkit-transform: rotate(237.6deg);
+  -ms-transform: rotate(237.6deg);
+  transform: rotate(237.6deg);
+}
+.radial-progressaverage[data-progress="66"] .inset .percentage .numbers {
+  width: 2680px;
+  text-shadow: 0 0 2px #afff00 !important;
+}
+.radial-progressaverage[data-progress="66"] .mask .fill {
+  background-color: #afff00 !important;
+}
+.radial-progressaverage[data-progress="67"] .circle .mask.full,
+.radial-progressaverage[data-progress="67"] .circle .fill {
+  -webkit-transform: rotate(120.6deg);
+  -ms-transform: rotate(120.6deg);
+  transform: rotate(120.6deg);
+}
+.radial-progressaverage[data-progress="67"] .circle .fill.fix {
+  -webkit-transform: rotate(241.2deg);
+  -ms-transform: rotate(241.2deg);
+  transform: rotate(241.2deg);
+}
+.radial-progressaverage[data-progress="67"] .inset .percentage .numbers {
+  width: 2720px;
+  text-shadow: 0 0 2px #aaff00 !important;
+}
+.radial-progressaverage[data-progress="67"] .mask .fill {
+  background-color: #aaff00 !important;
+}
+.radial-progressaverage[data-progress="68"] .circle .mask.full,
+.radial-progressaverage[data-progress="68"] .circle .fill {
+  -webkit-transform: rotate(122.4deg);
+  -ms-transform: rotate(122.4deg);
+  transform: rotate(122.4deg);
+}
+.radial-progressaverage[data-progress="68"] .circle .fill.fix {
+  -webkit-transform: rotate(244.8deg);
+  -ms-transform: rotate(244.8deg);
+  transform: rotate(244.8deg);
+}
+.radial-progressaverage[data-progress="68"] .inset .percentage .numbers {
+  width: 2760px;
+  text-shadow: 0 0 2px #a5ff00 !important;
+}
+.radial-progressaverage[data-progress="68"] .mask .fill {
+  background-color: #a5ff00 !important;
+}
+.radial-progressaverage[data-progress="69"] .circle .mask.full,
+.radial-progressaverage[data-progress="69"] .circle .fill {
+  -webkit-transform: rotate(124.2deg);
+  -ms-transform: rotate(124.2deg);
+  transform: rotate(124.2deg);
+}
+.radial-progressaverage[data-progress="69"] .circle .fill.fix {
+  -webkit-transform: rotate(248.4deg);
+  -ms-transform: rotate(248.4deg);
+  transform: rotate(248.4deg);
+}
+.radial-progressaverage[data-progress="69"] .inset .percentage .numbers {
+  width: 2800px;
+  text-shadow: 0 0 2px #a0ff00 !important;
+}
+.radial-progressaverage[data-progress="69"] .mask .fill {
+  background-color: #a0ff00 !important;
+}
+.radial-progressaverage[data-progress="70"] .circle .mask.full,
+.radial-progressaverage[data-progress="70"] .circle .fill {
+  -webkit-transform: rotate(126deg);
+  -ms-transform: rotate(126deg);
+  transform: rotate(126deg);
+}
+.radial-progressaverage[data-progress="70"] .circle .fill.fix {
+  -webkit-transform: rotate(252deg);
+  -ms-transform: rotate(252deg);
+  transform: rotate(252deg);
+}
+.radial-progressaverage[data-progress="70"] .inset .percentage .numbers {
+  width: 2840px;
+  text-shadow: 0 0 2px #9bff00 !important;
+}
+.radial-progressaverage[data-progress="70"] .mask .fill {
+  background-color: #9bff00 !important;
+}
+.radial-progressaverage[data-progress="71"] .circle .mask.full,
+.radial-progressaverage[data-progress="71"] .circle .fill {
+  -webkit-transform: rotate(127.8deg);
+  -ms-transform: rotate(127.8deg);
+  transform: rotate(127.8deg);
+}
+.radial-progressaverage[data-progress="71"] .circle .fill.fix {
+  -webkit-transform: rotate(255.6deg);
+  -ms-transform: rotate(255.6deg);
+  transform: rotate(255.6deg);
+}
+.radial-progressaverage[data-progress="71"] .inset .percentage .numbers {
+  width: 2880px;
+  text-shadow: 0 0 2px #96ff00 !important;
+}
+.radial-progressaverage[data-progress="71"] .mask .fill {
+  background-color: #96ff00 !important;
+}
+.radial-progressaverage[data-progress="72"] .circle .mask.full,
+.radial-progressaverage[data-progress="72"] .circle .fill {
+  -webkit-transform: rotate(129.6deg);
+  -ms-transform: rotate(129.6deg);
+  transform: rotate(129.6deg);
+}
+.radial-progressaverage[data-progress="72"] .circle .fill.fix {
+  -webkit-transform: rotate(259.2deg);
+  -ms-transform: rotate(259.2deg);
+  transform: rotate(259.2deg);
+}
+.radial-progressaverage[data-progress="72"] .inset .percentage .numbers {
+  width: 2920px;
+  text-shadow: 0 0 2px #91ff00 !important;
+}
+.radial-progressaverage[data-progress="72"] .mask .fill {
+  background-color: #91ff00 !important;
+}
+.radial-progressaverage[data-progress="73"] .circle .mask.full,
+.radial-progressaverage[data-progress="73"] .circle .fill {
+  -webkit-transform: rotate(131.4deg);
+  -ms-transform: rotate(131.4deg);
+  transform: rotate(131.4deg);
+}
+.radial-progressaverage[data-progress="73"] .circle .fill.fix {
+  -webkit-transform: rotate(262.8deg);
+  -ms-transform: rotate(262.8deg);
+  transform: rotate(262.8deg);
+}
+.radial-progressaverage[data-progress="73"] .inset .percentage .numbers {
+  width: 2960px;
+  text-shadow: 0 0 2px #8cff00 !important;
+}
+.radial-progressaverage[data-progress="73"] .mask .fill {
+  background-color: #8cff00 !important;
+}
+.radial-progressaverage[data-progress="74"] .circle .mask.full,
+.radial-progressaverage[data-progress="74"] .circle .fill {
+  -webkit-transform: rotate(133.2deg);
+  -ms-transform: rotate(133.2deg);
+  transform: rotate(133.2deg);
+}
+.radial-progressaverage[data-progress="74"] .circle .fill.fix {
+  -webkit-transform: rotate(266.4deg);
+  -ms-transform: rotate(266.4deg);
+  transform: rotate(266.4deg);
+}
+.radial-progressaverage[data-progress="74"] .inset .percentage .numbers {
+  width: 3000px;
+  text-shadow: 0 0 2px #87ff00 !important;
+}
+.radial-progressaverage[data-progress="74"] .mask .fill {
+  background-color: #87ff00 !important;
+}
+.radial-progressaverage[data-progress="75"] .circle .mask.full,
+.radial-progressaverage[data-progress="75"] .circle .fill {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.radial-progressaverage[data-progress="75"] .circle .fill.fix {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.radial-progressaverage[data-progress="75"] .inset .percentage .numbers {
+  width: 3040px;
+  text-shadow: 0 0 2px #82ff00 !important;
+}
+.radial-progressaverage[data-progress="75"] .mask .fill {
+  background-color: #82ff00 !important;
+}
+.radial-progressaverage[data-progress="76"] .circle .mask.full,
+.radial-progressaverage[data-progress="76"] .circle .fill {
+  -webkit-transform: rotate(136.8deg);
+  -ms-transform: rotate(136.8deg);
+  transform: rotate(136.8deg);
+}
+.radial-progressaverage[data-progress="76"] .circle .fill.fix {
+  -webkit-transform: rotate(273.6deg);
+  -ms-transform: rotate(273.6deg);
+  transform: rotate(273.6deg);
+}
+.radial-progressaverage[data-progress="76"] .inset .percentage .numbers {
+  width: 3080px;
+  text-shadow: 0 0 2px #7dff00 !important;
+}
+.radial-progressaverage[data-progress="76"] .mask .fill {
+  background-color: #7dff00 !important;
+}
+.radial-progressaverage[data-progress="77"] .circle .mask.full,
+.radial-progressaverage[data-progress="77"] .circle .fill {
+  -webkit-transform: rotate(138.6deg);
+  -ms-transform: rotate(138.6deg);
+  transform: rotate(138.6deg);
+}
+.radial-progressaverage[data-progress="77"] .circle .fill.fix {
+  -webkit-transform: rotate(277.2deg);
+  -ms-transform: rotate(277.2deg);
+  transform: rotate(277.2deg);
+}
+.radial-progressaverage[data-progress="77"] .inset .percentage .numbers {
+  width: 3120px;
+  text-shadow: 0 0 2px #78ff00 !important;
+}
+.radial-progressaverage[data-progress="77"] .mask .fill {
+  background-color: #78ff00 !important;
+}
+.radial-progressaverage[data-progress="78"] .circle .mask.full,
+.radial-progressaverage[data-progress="78"] .circle .fill {
+  -webkit-transform: rotate(140.4deg);
+  -ms-transform: rotate(140.4deg);
+  transform: rotate(140.4deg);
+}
+.radial-progressaverage[data-progress="78"] .circle .fill.fix {
+  -webkit-transform: rotate(280.8deg);
+  -ms-transform: rotate(280.8deg);
+  transform: rotate(280.8deg);
+}
+.radial-progressaverage[data-progress="78"] .inset .percentage .numbers {
+  width: 3160px;
+  text-shadow: 0 0 2px #73ff00 !important;
+}
+.radial-progressaverage[data-progress="78"] .mask .fill {
+  background-color: #73ff00 !important;
+}
+.radial-progressaverage[data-progress="79"] .circle .mask.full,
+.radial-progressaverage[data-progress="79"] .circle .fill {
+  -webkit-transform: rotate(142.2deg);
+  -ms-transform: rotate(142.2deg);
+  transform: rotate(142.2deg);
+}
+.radial-progressaverage[data-progress="79"] .circle .fill.fix {
+  -webkit-transform: rotate(284.4deg);
+  -ms-transform: rotate(284.4deg);
+  transform: rotate(284.4deg);
+}
+.radial-progressaverage[data-progress="79"] .inset .percentage .numbers {
+  width: 3200px;
+  text-shadow: 0 0 2px #6eff00 !important;
+}
+.radial-progressaverage[data-progress="79"] .mask .fill {
+  background-color: #6eff00 !important;
+}
+.radial-progressaverage[data-progress="80"] .circle .mask.full,
+.radial-progressaverage[data-progress="80"] .circle .fill {
+  -webkit-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+.radial-progressaverage[data-progress="80"] .circle .fill.fix {
+  -webkit-transform: rotate(288deg);
+  -ms-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+.radial-progressaverage[data-progress="80"] .inset .percentage .numbers {
+  width: 3240px;
+  text-shadow: 0 0 2px #69ff00 !important;
+}
+.radial-progressaverage[data-progress="80"] .mask .fill {
+  background-color: #69ff00 !important;
+}
+.radial-progressaverage[data-progress="81"] .circle .mask.full,
+.radial-progressaverage[data-progress="81"] .circle .fill {
+  -webkit-transform: rotate(145.8deg);
+  -ms-transform: rotate(145.8deg);
+  transform: rotate(145.8deg);
+}
+.radial-progressaverage[data-progress="81"] .circle .fill.fix {
+  -webkit-transform: rotate(291.6deg);
+  -ms-transform: rotate(291.6deg);
+  transform: rotate(291.6deg);
+}
+.radial-progressaverage[data-progress="81"] .inset .percentage .numbers {
+  width: 3280px;
+  text-shadow: 0 0 2px #64ff00 !important;
+}
+.radial-progressaverage[data-progress="81"] .mask .fill {
+  background-color: #64ff00 !important;
+}
+.radial-progressaverage[data-progress="82"] .circle .mask.full,
+.radial-progressaverage[data-progress="82"] .circle .fill {
+  -webkit-transform: rotate(147.6deg);
+  -ms-transform: rotate(147.6deg);
+  transform: rotate(147.6deg);
+}
+.radial-progressaverage[data-progress="82"] .circle .fill.fix {
+  -webkit-transform: rotate(295.2deg);
+  -ms-transform: rotate(295.2deg);
+  transform: rotate(295.2deg);
+}
+.radial-progressaverage[data-progress="82"] .inset .percentage .numbers {
+  width: 3320px;
+  text-shadow: 0 0 2px #5fff00 !important;
+}
+.radial-progressaverage[data-progress="82"] .mask .fill {
+  background-color: #5fff00 !important;
+}
+.radial-progressaverage[data-progress="83"] .circle .mask.full,
+.radial-progressaverage[data-progress="83"] .circle .fill {
+  -webkit-transform: rotate(149.4deg);
+  -ms-transform: rotate(149.4deg);
+  transform: rotate(149.4deg);
+}
+.radial-progressaverage[data-progress="83"] .circle .fill.fix {
+  -webkit-transform: rotate(298.8deg);
+  -ms-transform: rotate(298.8deg);
+  transform: rotate(298.8deg);
+}
+.radial-progressaverage[data-progress="83"] .inset .percentage .numbers {
+  width: 3360px;
+  text-shadow: 0 0 2px #5aff00 !important;
+}
+.radial-progressaverage[data-progress="83"] .mask .fill {
+  background-color: #5aff00 !important;
+}
+.radial-progressaverage[data-progress="84"] .circle .mask.full,
+.radial-progressaverage[data-progress="84"] .circle .fill {
+  -webkit-transform: rotate(151.2deg);
+  -ms-transform: rotate(151.2deg);
+  transform: rotate(151.2deg);
+}
+.radial-progressaverage[data-progress="84"] .circle .fill.fix {
+  -webkit-transform: rotate(302.4deg);
+  -ms-transform: rotate(302.4deg);
+  transform: rotate(302.4deg);
+}
+.radial-progressaverage[data-progress="84"] .inset .percentage .numbers {
+  width: 3400px;
+  text-shadow: 0 0 2px #55ff00 !important;
+}
+.radial-progressaverage[data-progress="84"] .mask .fill {
+  background-color: #55ff00 !important;
+}
+.radial-progressaverage[data-progress="85"] .circle .mask.full,
+.radial-progressaverage[data-progress="85"] .circle .fill {
+  -webkit-transform: rotate(153deg);
+  -ms-transform: rotate(153deg);
+  transform: rotate(153deg);
+}
+.radial-progressaverage[data-progress="85"] .circle .fill.fix {
+  -webkit-transform: rotate(306deg);
+  -ms-transform: rotate(306deg);
+  transform: rotate(306deg);
+}
+.radial-progressaverage[data-progress="85"] .inset .percentage .numbers {
+  width: 3440px;
+  text-shadow: 0 0 2px #50ff00 !important;
+}
+.radial-progressaverage[data-progress="85"] .mask .fill {
+  background-color: #50ff00 !important;
+}
+.radial-progressaverage[data-progress="86"] .circle .mask.full,
+.radial-progressaverage[data-progress="86"] .circle .fill {
+  -webkit-transform: rotate(154.8deg);
+  -ms-transform: rotate(154.8deg);
+  transform: rotate(154.8deg);
+}
+.radial-progressaverage[data-progress="86"] .circle .fill.fix {
+  -webkit-transform: rotate(309.6deg);
+  -ms-transform: rotate(309.6deg);
+  transform: rotate(309.6deg);
+}
+.radial-progressaverage[data-progress="86"] .inset .percentage .numbers {
+  width: 3480px;
+  text-shadow: 0 0 2px #4bff00 !important;
+}
+.radial-progressaverage[data-progress="86"] .mask .fill {
+  background-color: #4bff00 !important;
+}
+.radial-progressaverage[data-progress="87"] .circle .mask.full,
+.radial-progressaverage[data-progress="87"] .circle .fill {
+  -webkit-transform: rotate(156.6deg);
+  -ms-transform: rotate(156.6deg);
+  transform: rotate(156.6deg);
+}
+.radial-progressaverage[data-progress="87"] .circle .fill.fix {
+  -webkit-transform: rotate(313.2deg);
+  -ms-transform: rotate(313.2deg);
+  transform: rotate(313.2deg);
+}
+.radial-progressaverage[data-progress="87"] .inset .percentage .numbers {
+  width: 3520px;
+  text-shadow: 0 0 2px #46ff00 !important;
+}
+.radial-progressaverage[data-progress="87"] .mask .fill {
+  background-color: #46ff00 !important;
+}
+.radial-progressaverage[data-progress="88"] .circle .mask.full,
+.radial-progressaverage[data-progress="88"] .circle .fill {
+  -webkit-transform: rotate(158.4deg);
+  -ms-transform: rotate(158.4deg);
+  transform: rotate(158.4deg);
+}
+.radial-progressaverage[data-progress="88"] .circle .fill.fix {
+  -webkit-transform: rotate(316.8deg);
+  -ms-transform: rotate(316.8deg);
+  transform: rotate(316.8deg);
+}
+.radial-progressaverage[data-progress="88"] .inset .percentage .numbers {
+  width: 3560px;
+  text-shadow: 0 0 2px #41ff00 !important;
+}
+.radial-progressaverage[data-progress="88"] .mask .fill {
+  background-color: #41ff00 !important;
+}
+.radial-progressaverage[data-progress="89"] .circle .mask.full,
+.radial-progressaverage[data-progress="89"] .circle .fill {
+  -webkit-transform: rotate(160.2deg);
+  -ms-transform: rotate(160.2deg);
+  transform: rotate(160.2deg);
+}
+.radial-progressaverage[data-progress="89"] .circle .fill.fix {
+  -webkit-transform: rotate(320.4deg);
+  -ms-transform: rotate(320.4deg);
+  transform: rotate(320.4deg);
+}
+.radial-progressaverage[data-progress="89"] .inset .percentage .numbers {
+  width: 3600px;
+  text-shadow: 0 0 2px #3cff00 !important;
+}
+.radial-progressaverage[data-progress="89"] .mask .fill {
+  background-color: #3cff00 !important;
+}
+.radial-progressaverage[data-progress="90"] .circle .mask.full,
+.radial-progressaverage[data-progress="90"] .circle .fill {
+  -webkit-transform: rotate(162deg);
+  -ms-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+.radial-progressaverage[data-progress="90"] .circle .fill.fix {
+  -webkit-transform: rotate(324deg);
+  -ms-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+.radial-progressaverage[data-progress="90"] .inset .percentage .numbers {
+  width: 3640px;
+  text-shadow: 0 0 2px #37ff00 !important;
+}
+.radial-progressaverage[data-progress="90"] .mask .fill {
+  background-color: #37ff00 !important;
+}
+.radial-progressaverage[data-progress="91"] .circle .mask.full,
+.radial-progressaverage[data-progress="91"] .circle .fill {
+  -webkit-transform: rotate(163.8deg);
+  -ms-transform: rotate(163.8deg);
+  transform: rotate(163.8deg);
+}
+.radial-progressaverage[data-progress="91"] .circle .fill.fix {
+  -webkit-transform: rotate(327.6deg);
+  -ms-transform: rotate(327.6deg);
+  transform: rotate(327.6deg);
+}
+.radial-progressaverage[data-progress="91"] .inset .percentage .numbers {
+  width: 3680px;
+  text-shadow: 0 0 2px #32ff00 !important;
+}
+.radial-progressaverage[data-progress="91"] .mask .fill {
+  background-color: #32ff00 !important;
+}
+.radial-progressaverage[data-progress="92"] .circle .mask.full,
+.radial-progressaverage[data-progress="92"] .circle .fill {
+  -webkit-transform: rotate(165.6deg);
+  -ms-transform: rotate(165.6deg);
+  transform: rotate(165.6deg);
+}
+.radial-progressaverage[data-progress="92"] .circle .fill.fix {
+  -webkit-transform: rotate(331.2deg);
+  -ms-transform: rotate(331.2deg);
+  transform: rotate(331.2deg);
+}
+.radial-progressaverage[data-progress="92"] .inset .percentage .numbers {
+  width: 3720px;
+  text-shadow: 0 0 2px #2dff00 !important;
+}
+.radial-progressaverage[data-progress="92"] .mask .fill {
+  background-color: #2dff00 !important;
+}
+.radial-progressaverage[data-progress="93"] .circle .mask.full,
+.radial-progressaverage[data-progress="93"] .circle .fill {
+  -webkit-transform: rotate(167.4deg);
+  -ms-transform: rotate(167.4deg);
+  transform: rotate(167.4deg);
+}
+.radial-progressaverage[data-progress="93"] .circle .fill.fix {
+  -webkit-transform: rotate(334.8deg);
+  -ms-transform: rotate(334.8deg);
+  transform: rotate(334.8deg);
+}
+.radial-progressaverage[data-progress="93"] .inset .percentage .numbers {
+  width: 3760px;
+  text-shadow: 0 0 2px #28ff00 !important;
+}
+.radial-progressaverage[data-progress="93"] .mask .fill {
+  background-color: #28ff00 !important;
+}
+.radial-progressaverage[data-progress="94"] .circle .mask.full,
+.radial-progressaverage[data-progress="94"] .circle .fill {
+  -webkit-transform: rotate(169.2deg);
+  -ms-transform: rotate(169.2deg);
+  transform: rotate(169.2deg);
+}
+.radial-progressaverage[data-progress="94"] .circle .fill.fix {
+  -webkit-transform: rotate(338.4deg);
+  -ms-transform: rotate(338.4deg);
+  transform: rotate(338.4deg);
+}
+.radial-progressaverage[data-progress="94"] .inset .percentage .numbers {
+  width: 3800px;
+  text-shadow: 0 0 2px #23ff00 !important;
+}
+.radial-progressaverage[data-progress="94"] .mask .fill {
+  background-color: #23ff00 !important;
+}
+.radial-progressaverage[data-progress="95"] .circle .mask.full,
+.radial-progressaverage[data-progress="95"] .circle .fill {
+  -webkit-transform: rotate(171deg);
+  -ms-transform: rotate(171deg);
+  transform: rotate(171deg);
+}
+.radial-progressaverage[data-progress="95"] .circle .fill.fix {
+  -webkit-transform: rotate(342deg);
+  -ms-transform: rotate(342deg);
+  transform: rotate(342deg);
+}
+.radial-progressaverage[data-progress="95"] .inset .percentage .numbers {
+  width: 3840px;
+  text-shadow: 0 0 2px #1eff00 !important;
+}
+.radial-progressaverage[data-progress="95"] .mask .fill {
+  background-color: #1eff00 !important;
+}
+.radial-progressaverage[data-progress="96"] .circle .mask.full,
+.radial-progressaverage[data-progress="96"] .circle .fill {
+  -webkit-transform: rotate(172.8deg);
+  -ms-transform: rotate(172.8deg);
+  transform: rotate(172.8deg);
+}
+.radial-progressaverage[data-progress="96"] .circle .fill.fix {
+  -webkit-transform: rotate(345.6deg);
+  -ms-transform: rotate(345.6deg);
+  transform: rotate(345.6deg);
+}
+.radial-progressaverage[data-progress="96"] .inset .percentage .numbers {
+  width: 3880px;
+  text-shadow: 0 0 2px #19ff00 !important;
+}
+.radial-progressaverage[data-progress="96"] .mask .fill {
+  background-color: #19ff00 !important;
+}
+.radial-progressaverage[data-progress="97"] .circle .mask.full,
+.radial-progressaverage[data-progress="97"] .circle .fill {
+  -webkit-transform: rotate(174.6deg);
+  -ms-transform: rotate(174.6deg);
+  transform: rotate(174.6deg);
+}
+.radial-progressaverage[data-progress="97"] .circle .fill.fix {
+  -webkit-transform: rotate(349.2deg);
+  -ms-transform: rotate(349.2deg);
+  transform: rotate(349.2deg);
+}
+.radial-progressaverage[data-progress="97"] .inset .percentage .numbers {
+  width: 3920px;
+  text-shadow: 0 0 2px #14ff00 !important;
+}
+.radial-progressaverage[data-progress="97"] .mask .fill {
+  background-color: #14ff00 !important;
+}
+.radial-progressaverage[data-progress="98"] .circle .mask.full,
+.radial-progressaverage[data-progress="98"] .circle .fill {
+  -webkit-transform: rotate(176.4deg);
+  -ms-transform: rotate(176.4deg);
+  transform: rotate(176.4deg);
+}
+.radial-progressaverage[data-progress="98"] .circle .fill.fix {
+  -webkit-transform: rotate(352.8deg);
+  -ms-transform: rotate(352.8deg);
+  transform: rotate(352.8deg);
+}
+.radial-progressaverage[data-progress="98"] .inset .percentage .numbers {
+  width: 3960px;
+  text-shadow: 0 0 2px #0fff00 !important;
+}
+.radial-progressaverage[data-progress="98"] .mask .fill {
+  background-color: #0fff00 !important;
+}
+.radial-progressaverage[data-progress="99"] .circle .mask.full,
+.radial-progressaverage[data-progress="99"] .circle .fill {
+  -webkit-transform: rotate(178.2deg);
+  -ms-transform: rotate(178.2deg);
+  transform: rotate(178.2deg);
+}
+.radial-progressaverage[data-progress="99"] .circle .fill.fix {
+  -webkit-transform: rotate(356.4deg);
+  -ms-transform: rotate(356.4deg);
+  transform: rotate(356.4deg);
+}
+.radial-progressaverage[data-progress="99"] .inset .percentage .numbers {
+  width: 4000px;
+  text-shadow: 0 0 2px #0aff00 !important;
+}
+.radial-progressaverage[data-progress="99"] .mask .fill {
+  background-color: #0aff00 !important;
+}
+.radial-progressaverage[data-progress="100"] .circle .mask.full,
+.radial-progressaverage[data-progress="100"] .circle .fill {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.radial-progressaverage[data-progress="100"] .circle .fill.fix {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.radial-progressaverage[data-progress="100"] .inset .percentage .numbers {
+  width: 4040px;
+  text-shadow: 0 0 2px #05ff00 !important;
+}
+.radial-progressaverage[data-progress="100"] .mask .fill {
+  background-color: #05ff00 !important;
+}

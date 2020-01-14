@@ -1,0 +1,394 @@
+/*********** ECRA INICIAL ******************/
+#ecrainicial{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+} 
+
+#listafilmes{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	z-index: 0;
+	margin-top: 1.25rem;
+	margin-right: 0rem;
+	margin-left: 0rem;
+	margin-bottom: 1.25rem;
+			-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.contentoresfilmes{
+	text-align:center;	
+}
+
+.descricaofilme{
+	height:231px;
+	background-color: white;
+	opacity: 0.7;
+	display:none;
+	padding-left: 0.6rem;
+	padding-right: 0.6rem; 
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	width: 154px;
+	font-size: 130%;
+	font-weight: 800;
+	word-wrap: normal;
+	text-align:center;
+	text-shadow: 0.2rem 0.2rem 0.2rem #D3D3D3;
+	margin-left: 0 ;
+	margin-right: 0 ;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+  /* -webkit-animation-name: spin;
+    -webkit-animation-duration: 400ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 400ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 400ms;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: linear;
+    -o-transition: rotate(3600deg);*/
+}
+/*
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }*/
+
+
+.descricaofilme p{
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: 100%;
+	font-weight: 700;
+	word-wrap: normal;
+	text-align:center;
+}
+
+#categoriafilmesdiv1{
+
+}
+
+#categoriafilmesdiv2{
+
+}
+
+#categoriafilmesdiv3{
+
+}
+
+#categoriafilmesdiv4{
+
+}
+
+.categoriafilmesdiv{
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: space-around;
+	background-color: black;
+	margin-bottom: 1rem;
+	padding:0.5rem;
+	padding-top: 0rem;
+	border-top-left-radius: 1.5em;
+	border-top-right-radius: 1.5em;
+	-webkit-box-shadow: 0 0 0.3rem #D3D3D3;
+    box-shadow: 0.1rem 0.1rem 0.6rem #D3D3D3;
+}
+
+.categoriafilmesdiv:hover {
+  outline: 0;
+  border-color: #66b1ee;
+  -webkit-box-shadow: 0 0 0.3rem rgba(85, 168, 236, 0.9);
+  box-shadow: 0 0 0.6rem rgba(85, 168, 236, 0.9);
+}
+
+.categoriafilmes{
+	color: white;
+	text-align: center;
+	font-size: 120%;
+	font-weight: 900;
+	padding-top:0.3rem;
+	padding-bottom:0.3rem;
+}
+
+.filmesindividuais{
+	cursor: pointer;
+}
+
+
+.jssorb03 {
+	position: absolute;
+}
+.jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 21px;
+	height: 21px;
+	text-align: center;
+	line-height: 21px;
+	color: white;
+	font-size: 12px;
+	background: url("../img/b03.png") no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+}
+.jssorb03 div { background-position: -5px -4px; }
+.jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+.jssorb03 .av { background-position: -65px -4px; }
+.jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+
+
+
+/* jssor slider arrow navigator skin 03 css */
+/*
+.jssora03l                  (normal)
+.jssora03r                  (normal)
+.jssora03l:hover            (normal mouseover)
+.jssora03r:hover            (normal mouseover)
+.jssora03l.jssora03ldn      (mousedown)
+.jssora03r.jssora03rdn      (mousedown)
+*/
+.jssora03l, .jssora03r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	background: url("../img/a03.png") no-repeat;
+	overflow: hidden;
+}
+.jssora03l { background-position: -3px -33px; }
+.jssora03r { background-position: -63px -33px; }
+.jssora03l:hover { background-position: -123px -33px; }
+.jssora03r:hover { background-position: -183px -33px; }
+.jssora03l.jssora03ldn { background-position: -243px -33px; }
+.jssora03r.jssora03rdn { background-position: -303px -33px; }			
+/**** FIM DA LISTA DE FILMES ****/
+
+
+/**** SLIDES NOTICIAS ****/
+.myfixedelement{
+	position: absolute;
+	left: 0px;
+	bottom: 60px;
+	width: 600px;
+	height: auto;
+	background-color: white;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	opacity: 0.7;
+	display:none;
+	padding: 0.5rem;
+	font-size: 120%;
+	font-weight: 700;
+	text-shadow: 0.2rem 0.2rem 0.2rem #D3D3D3;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	word-wrap: normal;
+	text-align: justify;
+}
+
+.titulonoticia{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	color:#fff;
+	font-size:20px;
+	line-height: 120%;
+	font-weight: normal;
+	font-family: verdana;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	padding: 0.25rem;
+	padding-left: 0.8rem;
+	padding-right: 0.8rem;
+	text-shadow: 0.1rem 0.1rem 0.2rem #D3D3D3;
+	word-wrap: normal;
+}
+
+       
+
+#sliderb_container{
+	margin-bottom: 1rem;
+
+}
+
+.jssorb01 {
+	position: absolute;
+}
+.jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 12px;
+	height: 12px;
+	filter: alpha(opacity=70);
+	opacity: .7;
+	overflow: hidden;
+	cursor: pointer;
+	border: #000 1px solid;
+}
+.jssorb01 div { background-color: gray; }
+.jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
+.jssorb01 .av { background-color: #fff; }
+.jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+
+.jssora05l, .jssora05r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background: url("../img/a17.png") no-repeat;
+	overflow: hidden;
+}
+.jssora05l { background-position: -10px -40px; }
+.jssora05r { background-position: -70px -40px; }
+.jssora05l:hover { background-position: -130px -40px; }
+.jssora05r:hover { background-position: -190px -40px; }
+.jssora05l.jssora05ldn { background-position: -250px -40px; }
+.jssora05r.jssora05rdn { background-position: -310px -40px; }
+/**** FIM SLIDES NOTICIAS ****/
+
+#noticiasmaisfb
+{	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.25rem;
+	margin-right: 0rem;
+	margin-left: 0rem;
+	margin-bottom: 1.25rem;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+#fbdiv{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: space-around;
+	background-color: black;
+	margin-bottom: 1rem;
+	padding:0.5rem;
+	padding-top: 0rem;
+	border-top-left-radius: 1.5em;
+	border-top-right-radius: 1.5em;
+	cursor: pointer;
+
+}
+
+#fbtitle{
+	color: white;
+	text-align: center;
+	font-size: 120%;
+	font-weight: 900;
+	padding-top:0.3rem;
+	padding-bottom:0.3rem;
+}
+
+#fbtitlebody{
+	color: white;
+	text-align: center;
+	font-size: 100%;
+}
+
+.fb-comments{
+   width: 100% !important;
+}
+/*********** FIM DE ECRA INICIAL ******************/
+
+/*********** EFEITOS ******************/
+/* Pop */
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/* Curl Top Left */
+.hvr-curl-top-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+.hvr-curl-top-left:before {
+  pointer-events: none;
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  /* IE9 */
+  background: linear-gradient(135deg, white 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#000000');
+  /*For IE7-8-9*/
+  z-index: 1000;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: width, height;
+  transition-property: width, height;
+}
+.hvr-curl-top-left:hover:before, .hvr-curl-top-left:focus:before, .hvr-curl-top-left:active:before {
+  width: 25px;
+  height: 25px;
+}
+/*********** FIM DE EFEITOS ******************/

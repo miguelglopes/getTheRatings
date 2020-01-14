@@ -1,0 +1,73 @@
+#IN USE
+trakt
+tviso
+tmdb
+omdb x
+tvmaze
+tvdb
+Netflix x
+
+#OTHERS
+IMDB
+Wikipedia
+RottenTomatoes
+Roger Ebert @ suntimes.com
+Flixster
+Allrovi
+Metacritic
+BoxOfficeMojo
+MovieReviews
+tvrage
+https://news.google.pt/news?cf=all&hl=pt-PT&pz=1&ned=pt-PT_pt&topic=e&output=rss
+	http://feeds.feedburner.com/thr/news
+TheWrap
+Variety
+HollywoodReporter
+tvrage
+zap2it
+http://movieplayer.it/api/v1/
+https://yts.to/api
+http://services.jm-data.no/movieapp.asmx
+http://imdbapi.poromenos.org/
+http://developer.rottentomatoes.com/apps/mykeys
+http://kodi.wiki/view/Nfo#TV_Shows
+IVA->JA TENHO APIKEY tem trailers bons
+Gracenote
+ROVI
+Fandango
+EIDR
+RedBee
+Wikidata
+http://www.programmableweb.com/category/entertainment%2Bmovies%2Btv/apis?page=1&category=20133%2C20114%2C20194&order=created&sort=desc
+http://www.programmableweb.com/api/gurucue
+http://www.programmableweb.com/api/movieposterdb
+http://wiki.gromez.fr/dev/api/allocine_v3
+http://www.programmableweb.com/api/mymovies
+http://wiki.mymovies.dk/(X(1)S(r4bsnrrajzh5tj2upgrmt3nf))/My%20Movies%20XBMC%20Scraper.ashx
+http://www.programmableweb.com/api/guidebox
+http://www.programmableweb.com/api/they-said-so
+http://www.programmableweb.com/api/popcorn.js
+http://www.programmableweb.com/api/swanand-mokashi-quote-day
+http://www.programmableweb.com/api/idreambooks
+http://www.programmableweb.com/api/imdbapi.org
+http://www.programmableweb.com/api/subtitlesource
+http://www.programmableweb.com/api/subtitleseeker
+http://www.programmableweb.com/api/quotes-daddy
+http://www.programmableweb.com/api/athlinks
+http://www.programmableweb.com/api/subdb
+http://www.programmableweb.com/api/subsmax-movie-subtitles
+https://api.evvnt.com/#publisher_list_events
+http://www.programmableweb.com/api/tarya-technologies-randomquotes
+http://www.programmableweb.com/api/favqs
+http://www.programmableweb.com/api/iwatchonline
+https://movian.tv/projects/movian/wiki/HTTP_API
+http://epguides-api.readthedocs.org/en/latest/
+https://market.mashape.com/login
+https://market.mashape.com/byroredux/metacritic-v2/pricing
+https://market.mashape.com/dev132/bigflix-movies-download/pricing
+https://market.mashape.com/onesoft/imdb-international-movie-database/pricing
+https://market.mashape.com/codixor/uflixit/pricing
+https://market.mashape.com/iwodavid/iwatchonline-api
+https://market.mashape.com/razor/themovieclips/pricing
+https://market.mashape.com/udayogra/box-office-report
+https://market.mashape.com/dev132/book-my-show
